@@ -21,6 +21,10 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
     <title>RoyalVelocity</title>
   </head>
   <body>
@@ -31,7 +35,7 @@
         _mstaria-label="416962"
       >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Always expand</a>
+         <!--  <a class="navbar-brand" href="#">Always expand</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -43,27 +47,50 @@
             _mstaria-label="320099"
           >
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button> -->
           <div class="collapse navbar-collapse" id="navbarsExample02">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/Contacto.html">Contacto</a>
+                <a
+                  class="nav-link active fs-3 m-1"
+                  aria-current="page"
+                  href="./pages/Contacto.html"
+                  ><i class="bi bi-phone"></i
+                ></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/Nosotros.html">Nosotros</a>
+                <a
+                  class="nav-link active fs-3 m-1"
+                  aria-current="page"
+                  href="./pages/Nosotros.html"
+                  ><i class="bi bi-people"></i
+                ></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/Login.html">Login</a>
+                <a
+                  class="nav-link active fs-3 m-1"
+                  aria-current="page"
+                  href="./pages/Login.html"
+                  ><i class="bi bi-box-arrow-in-right"></i
+                ></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/detalleproducto.html">Carrito</a>
+                <a
+                  class="nav-link active m-1"
+                  aria-current="page"
+                  href="./pages/detalleproducto.html"
+                  ><img
+                    class="icon-nav"
+                    src="./assets/img/icons8-deporte-64 (2).png"
+                    alt=""
+                /></a>
               </li>
             </ul>
             <form role="search">
               <input
                 class="form-control"
                 type="search"
-                placeholder="Buscar vehiculo"
+                placeholder="Buscar"
                 aria-label="Search"
                 _mstplaceholder="74607"
                 _mstaria-label="74607"
@@ -222,7 +249,49 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+      <footer
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top"
+      >
+          <div class="col mb-3">
+          <img class="logo" src="./assets/img/LogoEmpresa.png" alt="">
+        </div>
+        <div class="col mb-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">instagram</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">facebook</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">whatsapp</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Nosotros</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
