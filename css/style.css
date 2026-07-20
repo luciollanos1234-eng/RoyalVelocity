@@ -1,0 +1,9 @@
+:root{
+    --color-textos: #ffffff;
+    --color-subtitulos: #ebebeb;
+    /* hover, botones y iconos: */
+    --color-iconos: #815e0c;
+    /* fondos */
+    --color-background: #000000;
+    --color-cards: #262626; 
+}
