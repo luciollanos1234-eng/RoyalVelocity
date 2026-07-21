@@ -29,6 +29,9 @@ h1 {
 .logo {
     width: 200px;
 }
+nav {
+  background-color: var(--color-background);
+}
 footer {
   display: flex;
   justify-content: center;
