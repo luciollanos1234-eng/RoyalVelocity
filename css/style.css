@@ -39,3 +39,11 @@ h1 {
 .logo {
     width: 100px;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: var(--color-textos);
+  background-color: var(--color-background);
+}
