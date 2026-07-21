@@ -15,7 +15,7 @@
 
   --fuente-secundary: "Manrope", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
 
   /* efectos de boton */
@@ -27,7 +27,7 @@ h1 {
     width: 50px;
 }
 .logo {
-    width: 100px;
+    width: 200px;
 }
 footer {
   display: flex;
