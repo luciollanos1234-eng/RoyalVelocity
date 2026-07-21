@@ -41,3 +41,28 @@ footer {
   color: var(--color-textos);
   background-color: var(--color-background);
 }
+/* media queris navbar */
+/* 📱 Móviles: hasta 767px */
+@media (max-width: 767px) {
+  .icon-nav {
+    width: 40px;
+  }
+  .Buscar {
+    width: 90px;
+  }
+}
+
+/* 📲 Tabletas: 768px a 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .icon-nav {
+    width: 45px;
+    
+  }
+}
+
+/* 💻 Escritorio: 992px en adelante */
+/* @media (min-width: 992px) {
+  nav {
+
+  }
+} */
