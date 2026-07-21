@@ -92,4 +92,5 @@ footer {
   position: absolute;
   top: 50%;
   left: 10%;
+  color: var(--color-textos);
 }
