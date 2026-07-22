@@ -29,8 +29,10 @@
 }
 
 /* MAIN */
-h1 {
+.titulo{
   font-family: var(--fuente-primary);
+  color: var(--color-textos);
+  font-weight: 600;
 }
 
 .hero {
@@ -38,9 +40,12 @@ h1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 50px;
+  padding: 80px;
   width: 100%;
   height: 100%;
+  font-family: var(--fuente-secundary);
+  color: var(--color-textos);
+  font-weight: 500;
 }
 
 .carousel1 {
