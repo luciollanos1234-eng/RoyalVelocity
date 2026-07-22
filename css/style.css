@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,600;1,600&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --color-textos: #ffffff;
   --color-subtitulos: #ebebeb;
@@ -20,18 +27,55 @@
 
   /* efectos de boton */
 }
+
+/* MAIN */
 h1 {
   font-family: var(--fuente-primary);
 }
+
+.hero {
+  background-image: url(../assets/img/Hero1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel1 {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+}
+
+.imgcarousel {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.letracarousel {
+  width: 100%;
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: var(--color-textos);
+}
+
 .icon-nav {
-    width: 50px;
+  width: 50px;
 }
+
 .logo {
-    width: 200px;
+  width: 200px;
 }
+
 nav {
   background-color: var(--color-background);
 }
+
 footer {
   display: flex;
   justify-content: center;
@@ -41,12 +85,14 @@ footer {
   color: var(--color-textos);
   background-color: var(--color-background);
 }
+
 /* media queris navbar */
 /* Móviles: hasta 767px */
 @media (max-width: 767px) {
   .icon-nav {
     width: 40px;
   }
+
   .Buscar {
     width: 90px;
   }
@@ -56,9 +102,10 @@ footer {
 @media (min-width: 768px) and (max-width: 991px) {
   .icon-nav {
     width: 45px;
-    
+
   }
 }
+
 /* media queris footer */
 /* Móviles: hasta 767px */
 @media (max-width: 767px) {
@@ -66,7 +113,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
   }
 }
 
@@ -76,21 +123,4 @@ footer {
 
   }
 }
- */.carousel1 {
-  width: 100%;
-  height: 50vh;
-  position: relative;
-}
-.imgcarousel {
-  width: 100%;
-  height: 50vh;
-  object-fit: cover;
-}
-.letracarousel {
-  width: 100%;
-  height: 60vh;
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  color: var(--color-textos);
-}
+ */
