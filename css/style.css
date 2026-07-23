@@ -23,8 +23,13 @@
 h1 {
   font-family: var(--fuente-primary);
 }
+.pages {
+  color: var(--color-iconos);
+}
 .icon-nav {
-    width: 50px;
+    width: 35px;
+    margin-top: 2px;
+    color: var(--color-iconos);
 }
 .logo {
     width: 200px;
@@ -45,7 +50,7 @@ footer {
 /* Móviles: hasta 767px */
 @media (max-width: 767px) {
   .icon-nav {
-    width: 40px;
+    width: 30px;
   }
   .Buscar {
     width: 90px;
@@ -55,7 +60,7 @@ footer {
 /* Tabletas: 768px a 991px */
 @media (min-width: 768px) and (max-width: 991px) {
   .icon-nav {
-    width: 45px;
+    width: 31px;
     
   }
 }
