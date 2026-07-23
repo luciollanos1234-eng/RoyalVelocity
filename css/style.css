@@ -47,7 +47,9 @@
   color: var(--color-textos);
   font-weight: 500;
 }
-
+.hero-filtros{
+  width: 70%;
+}
 .carousel1 {
   width: 100%;
   height: 50vh;
