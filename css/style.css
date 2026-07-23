@@ -51,7 +51,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   padding: 60px;
-  width: 100vw;
+  width: 100%;
   font-family: var(--fuente-secundary);
   color: var(--color-textos);
   font-weight: 500;
@@ -60,7 +60,7 @@ h1 {
   width: 100%;
 }
 .hero-filtros{
-  width: 100%;
+  width: 70%;
 }
 .carousel1 {
   width: 100%;
