@@ -26,6 +26,9 @@ h1 {
 .pages {
   color: var(--color-iconos);
 }
+.redes {
+  color: var(--color-textos);
+}
 .icon-nav {
     width: 35px;
     margin-top: 2px;
