@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
   <title>RoyalVelocity</title>
 </head>
+
 <body>
   <header>
     <nav class="navbar navbar-expand navbar-dark" aria-label="Second navbar example" _mstaria-label="416962">
@@ -21,19 +23,19 @@
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link active fs-3 m-1" aria-current="page" href="./pages/Contacto.html"><i
-                  class="bi bi-phone pages"></i></a>
+                  class="bi bi-phone"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link active fs-3 m-1" aria-current="page" href="./pages/Nosotros.html"><i
-                  class="bi bi-people pages"></i></a>
+                  class="bi bi-people"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link active fs-3 m-1" aria-current="page" href="./pages/Login.html"><i
-                  class="bi bi-box-arrow-in-right pages"></i></a>
+                  class="bi bi-box-arrow-in-right"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active m-1" aria-current="page" href="./pages/PaginaCompra.html"><img
-                  class="icon-nav" src="./assets/img/icons8-tesla-model-3-64.png" alt="" /></a>
+              <a class="nav-link active m-1" aria-current="page" href="./pages/detalleproducto.html"><img
+                  class="icon-nav" src="./assets/img/icons8-deporte-64 (2).png" alt="" /></a>
             </li>
           </ul>
           <form role="search" class="Buscar">
@@ -46,80 +48,76 @@
   </header>
   <main>
     <section class="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-6 hero-titulo">
-            <h1 class="titulo">DOMINA LA CARRETERA</h1>
-            <p>Encontra tu auto deportivo alta gama</p>
+      <div class="hero-titulo">
+        <h1 class="titulo">DOMINA LA CARRETERA</h1>
+        <p>Encontra tu auto deportivo alta gama</p>
+      </div>
+      <div class="hero-filtros d-flex justify-content-evenly">
+        <div class="boton-filtro">
+          <h6>MARCA</h6>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Seleccioná una marca
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ferrari</a></li>
+              <li><a class="dropdown-item" href="#">Porsche</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Lamborghini</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="hero-filtros d-flex justify-content-evenly">
-          <div class="boton-filtro">
-            <h6>MARCA</h6>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Seleccioná una marca
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Ferrari</a></li>
-                <li><a class="dropdown-item" href="#">Porsche</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Lamborghini</a>
-                </li>
-              </ul>
-            </div>
+        <div class="boton-filtro">
+          <h6>MODELO</h6>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Seleccioná un modelo
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">911 Carrera</a></li>
+              <li><a class="dropdown-item" href="#">Huracán</a></li>
+              <li><a class="dropdown-item" href="#">488 GTB</a>
+              </li>
+            </ul>
           </div>
-          <div class="boton-filtro">
-            <h6>MODELO</h6>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Seleccioná un modelo
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">911 Carrera</a></li>
-                <li><a class="dropdown-item" href="#">Huracán</a></li>
-                <li><a class="dropdown-item" href="#">488 GTB</a>
-                </li>
-              </ul>
-            </div>
+        </div>
+        <div class="boton-filtro">
+          <h6>AÑO</h6>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Seleccioná el año
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">2026</a></li>
+              <li><a class="dropdown-item" href="#">2025</a></li>
+              <li>
+                <a class="dropdown-item" href="#">2024</a>
+              </li>
+            </ul>
           </div>
-          <div class="boton-filtro">
-            <h6>AÑO</h6>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Seleccioná el año
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">2026</a></li>
-                <li><a class="dropdown-item" href="#">2025</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">2024</a>
-                </li>
-              </ul>
-            </div>
+        </div>
+        <div class="boton-filtro">
+          <h6>PRECIO</h6>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Rango de precio
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Hasta 50k USD</a></li>
+              <li><a class="dropdown-item" href="#">50k - 100k USD</a></li>
+              <li>
+                <a class="dropdown-item" href="#">100K - 250K USD</a>
+              </li>
+            </ul>
           </div>
-          <div class="boton-filtro">
-            <h6>PRECIO</h6>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Rango de precio
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Hasta 50k USD</a></li>
-                <li><a class="dropdown-item" href="#">50k - 100k USD</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">100K - 250K USD</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="boton-filtro align-self-end">
-            <button class="btn btn-primary " type="button">Buscar</button>
-          </div>
+        </div>
+        <div class="boton-filtro align-self-end">
+          <button class="btn btn-primary " type="button">Buscar</button>
         </div>
       </div>
     </section>
@@ -270,21 +268,21 @@
   </main>
   <footer>
     <div class="col mb-3">
-      <a href="./index.html"><img class="logo" src="./assets/img/LogoEmpresa.png" alt="logo"></a>
+      <a href="./index.html"><img class="logo" src="./assets/img/LogoEmpresa.png" alt=""></a>
     </div>
     <div class="col mb-3">
       <ul class="nav flex-column">
         <li class="nav-item mb-3">
-          <a href="" class="nav-link p-0 text-light"><i class="bi bi-instagram pages"></i> instagram</a>
+          <a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-instagram"></i> instagram</a>
         </li>
         <li class="nav-item mb-3">
-          <a href="#" class="nav-link p-0 text-light"><i class="bi bi-facebook pages"></i> facebook</a>
+          <a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-facebook"></i> facebook</a>
         </li>
         <li class="nav-item mb-3">
-          <a href="#" class="nav-link p-0 text-light"><i class="bi bi-whatsapp pages"></i> whatsapp</a>
+          <a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-whatsapp"></i> whatsapp</a>
         </li>
         <li class="nav-item mb-2">
-          <a href="./pages/Nosotros.html" class="nav-link p-0 text-light"><i class="bi bi-people pages">
+          <a href="./pages/Contacto.html" class="nav-link p-0 text-body-secondary"><i class="bi bi-people">
             </i>Nosotros</a>
         </li>
       </ul>
@@ -292,19 +290,19 @@
     <div class="col mb-3">
       <ul class="nav flex-column">
         <li class="nav-item mb-3">
-          <a href="#" class="nav-link p-0 text-light">Home</a>
+          <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
         </li>
         <li class="nav-item mb-3">
-          <a href="#" class="nav-link p-0 text-light">Features</a>
+          <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
         </li>
         <li class="nav-item mb-3">
-          <a href="#" class="nav-link p-0 text-light">Pricing</a>
+          <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
         </li>
         <li class="nav-item mb-3">
-          <a href="#" class="nav-link p-0 text-light">FAQs</a>
+          <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
         </li>
         <li class="nav-item mb-2">
-          <a href="#" class="nav-link p-0 text-light">About</a>
+          <a href="#" class="nav-link p-0 text-body-secondary">About</a>
         </li>
       </ul>
     </div>
@@ -313,4 +311,5 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 </body>
-</html>
+
+</html>w
