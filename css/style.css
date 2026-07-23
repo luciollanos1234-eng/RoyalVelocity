@@ -80,9 +80,6 @@ h1 {
   color: var(--color-textos);
 }
 /* MAIN */
-.icon-nav {
-  width: 50px;
-}
 .pages {
   color: var(--color-iconos);
 }
@@ -90,8 +87,8 @@ h1 {
   color: var(--color-textos);
 }
 .icon-nav {
-    width: 35px;
-    margin-top: 2px;
+    width: 55px;
+    margin-bottom: 2px;
     color: var(--color-iconos);
 }
 
@@ -172,7 +169,8 @@ footer {
 /* Móviles: hasta 767px */
 @media (max-width: 767px) {
   .icon-nav {
-    width: 30px;
+    width: 45px;
+    margin-bottom: 2px;
   }
 
   .Buscar {
@@ -184,9 +182,6 @@ footer {
 @media (min-width: 768px) and (max-width: 991px) {
   .icon-nav {
     width: 45px;
-
-    width: 31px;
-    
   }
 }
 
