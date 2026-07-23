@@ -29,10 +29,11 @@
 }
 
 /* MAIN */
-.titulo{
+.hero-titulo {
   font-family: var(--fuente-primary);
   color: var(--color-textos);
   font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 .hero {
@@ -40,9 +41,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 80px;
+  padding: 60px;
   width: 100%;
-  height: 100%;
   font-family: var(--fuente-secundary);
   color: var(--color-textos);
   font-weight: 500;
