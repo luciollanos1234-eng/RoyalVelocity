@@ -29,19 +29,9 @@
 }
 
 /* MAIN */
-
-body {
-  display: flex;
-  flex-direction: column;
-   min-height: 100vh;
-}
-main {
-  flex: 1 0 auto;
-}
 h1 {
   font-family: var(--fuente-primary);
   color: var(--color-textos);
-  font-weight: 600;
   margin-bottom: 1rem;
 }
 
@@ -54,14 +44,32 @@ h1 {
   width: 100%;
   font-family: var(--fuente-secundary);
   color: var(--color-textos);
-  font-weight: 500;
+  position: relative;
+  z-index: 2;
 }
-.hero-titulos{
+
+.capa-oscura {
   width: 100%;
+  height: 100%;
+  background-color: #00000062;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
-.hero-filtros{
-  width: 70%;
+
+.hero-titulo {
+  width: 100%;
+  font-size: 20px;
 }
+
+.hero-filtros {
+  width: 80%;
+}
+
+
 .carousel1 {
   width: 100%;
   height: 50vh;
@@ -82,20 +90,24 @@ h1 {
   left: 10%;
   color: var(--color-textos);
 }
+
 /* MAIN */
 .icon-nav {
   width: 50px;
 }
+
 .pages {
   color: var(--color-iconos);
 }
+
 .redes {
   color: var(--color-textos);
 }
+
 .icon-nav {
-    width: 35px;
-    margin-top: 2px;
-    color: var(--color-iconos);
+  width: 35px;
+  margin-top: 2px;
+  color: var(--color-iconos);
 }
 
 .logo {
@@ -115,6 +127,7 @@ footer {
   color: var(--color-textos);
   background-color: var(--color-background);
 }
+
 .form-contacto {
   max-width: 500px;
   margin: 2rem auto;
@@ -126,7 +139,8 @@ footer {
 }
 
 .form-contacto h2 {
-  color: #ff3333; /* Rojo acorde a tu logo */
+  color: #ff3333;
+  /* Rojo acorde a tu logo */
   margin-bottom: 0.5rem;
 }
 
@@ -142,7 +156,8 @@ footer {
   font-size: 0.9rem;
 }
 
-.campo input, .campo textarea {
+.campo input,
+.campo textarea {
   padding: 0.7rem;
   border: none;
   border-radius: 4px;
@@ -171,6 +186,7 @@ footer {
 .form-contacto button:hover {
   background: #cc0000;
 }
+
 /* media queris navbar */
 /* Móviles: hasta 767px */
 @media (max-width: 767px) {
@@ -189,7 +205,7 @@ footer {
     width: 45px;
 
     width: 31px;
-    
+
   }
 }
 
