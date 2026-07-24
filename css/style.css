@@ -68,17 +68,29 @@ h1 {
 .hero-filtros {
   width: 80%;
 }
+
 .boton-transparente {
   color: var(--color-textos) !important;
   background-color: #00000047 !important;
   backdrop-filter: blur(4px);
   transition: 0.3 ease;
+  border: none !important;
 }
 
 .boton-transparente:hover {
-   background-color: rgba(0, 0, 0, 0.695) !important;
-   border: none;
+  background-color: rgba(0, 0, 0, 0.786) !important;
 }
+
+.boton-buscar {
+  color: var(--color-textos) !important;
+  background-color: #000000 !important;
+  transition: transform 0.2s ease-in-out;
+}
+
+.boton-buscar:hover {
+  transform: scale(1.05);
+}
+
 .carousel1 {
   width: 100%;
   height: 50vh;
