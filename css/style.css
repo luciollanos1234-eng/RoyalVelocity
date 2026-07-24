@@ -72,13 +72,27 @@ h1 {
 .boton-transparente {
   color: var(--color-textos) !important;
   background-color: #00000047 !important;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
   transition: 0.3 ease;
   border: none !important;
 }
 
 .boton-transparente:hover {
   background-color: rgba(0, 0, 0, 0.786) !important;
+}
+
+.dropdown-menu {
+  background-color: #0000004b !important;
+}
+
+.dropdown-item {
+  background-color: #000000;
+  color: var(--color-textos) !important;
+}
+
+.dropdown-item:hover {
+  background-color: #000000 !important;
+  color: var(--color-textos) !important;
 }
 
 .boton-buscar {
