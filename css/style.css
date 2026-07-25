@@ -71,8 +71,8 @@ h1 {
 
 .boton-transparente {
   color: var(--color-textos) !important;
-  background-color: #00000047 !important;
-  backdrop-filter: blur(10px);
+  background-color: #48484821 !important;
+  backdrop-filter: blur(2px);
   transition: 0.3 ease;
   border: none !important;
 }
@@ -97,8 +97,10 @@ h1 {
 
 .boton-buscar {
   color: var(--color-textos) !important;
-  background-color: #000000 !important;
+  background-color: #815e0c97 !important;
+  backdrop-filter: blur(2px);
   transition: transform 0.2s ease-in-out;
+  width: 100PX;
 }
 
 .boton-buscar:hover {
