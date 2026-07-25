@@ -80,26 +80,22 @@ h1 {
   color: var(--color-textos);
 }
 /* MAIN */
-.pages {
-  color: var(--color-iconos);
-}
-.redes {
-  color: var(--color-textos);
-}
-.icon-nav {
-    width: 55px;
-    margin-bottom: 2px;
-    color: var(--color-iconos);
-}
-
-.logo {
-  width: 200px;
-}
-
+/* NAVBAR */
 nav {
   background-color: var(--color-background);
 }
-
+.pages {
+  color: var(--color-iconos);
+}
+.icon-nav {
+    width: 90px;
+    height: 90px;
+    color: var(--color-iconos);
+}
+.Buscar {
+  margin-right: 10px;
+}
+/* FOOTER */
 footer {
   display: flex;
   justify-content: center;
@@ -109,6 +105,13 @@ footer {
   color: var(--color-textos);
   background-color: var(--color-background);
 }
+.redes {
+  color: var(--color-textos);
+}
+.logo {
+  width: 200px;
+}
+/* CONTACTO */
 .form-contacto {
   max-width: 500px;
   margin: 2rem auto;
@@ -118,24 +121,20 @@ footer {
   color: white;
   font-family: sans-serif;
 }
-
 .form-contacto h2 {
-  color: #ff3333; /* Rojo acorde a tu logo */
+  color: #ff3333;
   margin-bottom: 0.5rem;
 }
-
 .campo {
   margin-bottom: 1.2rem;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
 }
-
 .campo label {
   color: #ddd;
   font-size: 0.9rem;
 }
-
 .campo input, .campo textarea {
   padding: 0.7rem;
   border: none;
@@ -144,12 +143,10 @@ footer {
   color: white;
   border: 1px solid #444;
 }
-
 .campo textarea {
   min-height: 120px;
   resize: vertical;
 }
-
 .form-contacto button {
   width: 100%;
   padding: 0.8rem;
@@ -161,10 +158,10 @@ footer {
   cursor: pointer;
   transition: background 0.2s;
 }
-
 .form-contacto button:hover {
   background: #cc0000;
 }
+/* ERROR404 */
 .error404 {
   width: 100%;
   height: 100%;
@@ -174,22 +171,27 @@ footer {
 /* Móviles: hasta 767px */
 @media (max-width: 767px) {
   .icon-nav {
-    width: 45px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 2px;
+    display: flex;
+    justify-content: start;
   }
-
-  .Buscar {
-    width: 90px;
+  .media {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  .pages {
+    font-size: xx-large;
   }
 }
-
 /* Tabletas: 768px a 991px */
-@media (min-width: 768px) and (max-width: 991px) {
+/* @media (min-width: 768px) and (max-width: 991px) {
   .icon-nav {
-    width: 45px;
+   
   }
-}
-
+} */
 /* media queris footer */
 /* Móviles: hasta 767px */
 @media (max-width: 767px) {
@@ -200,7 +202,6 @@ footer {
 
   }
 }
-
 /* Tabletas: 768px a 991px */
 /* @media (min-width: 768px) and (max-width: 991px) {
   footer {
