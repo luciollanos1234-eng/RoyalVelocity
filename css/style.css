@@ -87,11 +87,13 @@ h1 {
   color: var(--color-textos);
 }
 .icon-nav {
-    width: 55px;
-    margin-bottom: 2px;
+    width: 90px;
+    height: 90px;
     color: var(--color-iconos);
 }
-
+.Buscar {
+  margin-right: 10px;
+}
 .logo {
   width: 200px;
 }
@@ -174,19 +176,27 @@ footer {
 /* Móviles: hasta 767px */
 @media (max-width: 767px) {
   .icon-nav {
-    width: 45px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 2px;
+    display: flex;
+    justify-content: start;
   }
-
-  .Buscar {
-    width: 90px;
+  .media {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  .pages {
+    font-size: xx-large;
   }
 }
+
 
 /* Tabletas: 768px a 991px */
 @media (min-width: 768px) and (max-width: 991px) {
   .icon-nav {
-    width: 45px;
+   
   }
 }
 
@@ -200,6 +210,7 @@ footer {
 
   }
 }
+
 
 /* Tabletas: 768px a 991px */
 /* @media (min-width: 768px) and (max-width: 991px) {
