@@ -106,26 +106,58 @@ h1 {
 .boton-buscar:hover {
   transform: scale(1.05);
 }
-
+/*  SLIDE PROMOS */
 .carousel1 {
   width: 100%;
-  height: 50vh;
+  height: 40vh;
   position: relative;
 }
-
 .imgcarousel {
   width: 100%;
-  height: 50vh;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
+  filter: brightness(0.4) !important;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
 }
 
+.imgcarousel:hover{
+  filter: brightness(1) !important;
+}
 .letracarousel {
-  width: 100%;
-  height: 60vh;
-  position: absolute;
-  top: 50%;
-  left: 10%;
+  position: absolute !important;
+  top: 30px;
+  left: 30px;
   color: var(--color-textos);
+  font-family: var(--fuente-secundary);
+  z-index: 10;
+}
+
+.card-text-1 {
+  color: var(--color-iconos);
+  font-weight: bold;
+}
+
+.boton-promo {
+  background-color: transparent;
+  border: 2px solid #815e0c;
+  border-radius: 5px;
+  color: var(--color-iconos);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;;
+  z-index: 5;
+}
+
+
+.boton-promo:hover {
+  background-color: var(--color-iconos) !important;
+  color: #ffffff;
+  transform: scale(1.03);
 }
 
 /* MAIN */
