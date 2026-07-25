@@ -104,6 +104,11 @@ footer {
   padding: 30px;
   color: var(--color-textos);
   background-color: var(--color-background);
+  font-size: large;
+}
+.pages2 {
+  color: var(--color-iconos);
+  font-size: large;
 }
 .redes {
   color: var(--color-textos);
@@ -199,7 +204,15 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-size: small;
 
+  }
+  .pages2 {
+    font-size: small;
+  }
+  .logo {
+    width: 150px;
+    height: 150px;
   }
 }
 /* Tabletas: 768px a 991px */
