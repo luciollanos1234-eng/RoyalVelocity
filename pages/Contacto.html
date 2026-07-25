@@ -27,6 +27,7 @@
     />
     <title>RoyalVelocity</title>
   </head>
+
   <body>
     <header>
       <nav
@@ -37,7 +38,7 @@
         <div class="container-fluid">
           <div class="collapse navbar-collapse media" id="navbarsExample02">
             <ul class="navbar-nav me-auto">
-                 <li class="nav-item">
+              <li class="nav-item">
                 <a
                   class="nav-link active m-1"
                   aria-current="page"
@@ -72,7 +73,7 @@
                   ><i class="bi bi-box-arrow-in-right pages"></i
                 ></a>
               </li>
-               <li class="nav-item">
+              <li class="nav-item">
                 <a
                   class="nav-link active fs-2 mt-3"
                   aria-current="page"
@@ -101,19 +102,35 @@
         <div class="fila">
           <div class="campo">
             <label>Nombre</label>
-            <input type="text" required />
+            <input
+              type="text"
+              required
+              placeholder="Ej: Lucio llanos"
+              minlength="10"
+              maxlength="30"
+            />
           </div>
           <div class="campo">
             <label>Teléfono</label>
-            <input type="tel" required />
+            <input
+              type="tel"
+              required
+              placeholder="Ej: 3813042843"
+              minlength="9"
+              maxlength="10"
+            />
           </div>
         </div>
-
         <div class="campo">
           <label>Correo</label>
-          <input type="email" required />
+          <input
+            type="email"
+            required
+            placeholder="Ej: Luciollanos1234@gmail.com"
+            minlength="10"
+            maxlength="30"
+          />
         </div>
-
         <div class="campo">
           <label>Tipo de consulta</label>
           <select name="asunto">
@@ -123,21 +140,18 @@
             <option>Otra consulta</option>
           </select>
         </div>
-
         <div class="campo">
           <label>Marca y modelo de interés</label>
           <input type="text" placeholder="Ej: Ford Mustang 2024" />
         </div>
-
         <div class="campo">
           <label>Mensaje adicional</label>
           <textarea></textarea>
         </div>
-
         <button type="submit">Solicitar información</button>
       </form>
     </main>
-     <footer>
+    <footer>
       <div class="col mb-3">
         <a href="./index.html"
           ><img class="logo" src="../assets/img/LogoEmpresa.png" alt="logo"
