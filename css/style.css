@@ -109,11 +109,14 @@ h1 {
 
 .carousel-control-prev,
 .carousel-control-next {
-  z-index: 10 !important;
+  z-index: 20 !important;
+  width: 3rem !important;
+  z-index: 30;
 }
 
 .carousel1 {
-  width: 100%;
+  width: 100% !important;
+  /* Permite que el col-md-4 controle el tamaño */
   height: 40vh;
   position: relative;
 }
