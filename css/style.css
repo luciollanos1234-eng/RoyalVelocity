@@ -107,16 +107,24 @@ h1 {
   transform: scale(1.05);
 }
 
+.slide-promos {
+  background-color: #000000;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.carousel-indicators{
+  position: absolute;
+  top: 300px;
+}
 .carousel-control-prev,
 .carousel-control-next {
   z-index: 20 !important;
   width: 3rem !important;
-  z-index: 30;
 }
 
 .carousel1 {
   width: 100% !important;
-  /* Permite que el col-md-4 controle el tamaño */
   height: 40vh;
   position: relative;
 }
@@ -148,6 +156,7 @@ h1 {
 .card-text-1 {
   color: var(--color-iconos);
   font-weight: bold;
+  font-size: 20px;
 }
 
 .boton-promo {
