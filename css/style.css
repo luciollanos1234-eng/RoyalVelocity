@@ -9,7 +9,7 @@
 
 :root {
   --color-textos: #ffffff;
-  --color-subtitulos: #ebebeb;
+  --color-subtitulos: #b1aeae;
   /* hover, botones y iconos: */
   --color-iconos: #815e0c;
   /* fondos */
@@ -31,8 +31,16 @@
 /* MAIN */
 h1 {
   font-family: var(--fuente-primary);
-  color: var(--color-textos);
-  margin-bottom: 1rem;
+  font-size: 45px !important;
+}
+
+h4 {
+  font-family: var(--fuente-secundary);
+  font-size: bold;
+  color: var(--color-iconos) !important;
+  position: relative;
+  left: 50px;
+  bottom: 5px;
 }
 
 .hero {
@@ -107,16 +115,18 @@ h1 {
   transform: scale(1.05);
 }
 
+/* slide-promos */
 .slide-promos {
   background-color: #000000;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.carousel-indicators{
+.carousel-indicators {
   position: absolute;
   top: 300px;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
   z-index: 20 !important;
@@ -159,6 +169,10 @@ h1 {
   font-size: 20px;
 }
 
+.card-text-2 {
+  color: var(--color-subtitulos);
+}
+
 .boton-promo {
   background-color: transparent;
   border: 2px solid #815e0c;
@@ -177,6 +191,70 @@ h1 {
   background-color: var(--color-iconos) !important;
   color: #ffffff;
   transform: scale(1.03);
+}
+
+/* slide-promos */
+
+/* destacados */
+.destacados {
+  background-color: #000000;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.card-destacados {
+  background-color: var(--color-cards);
+  color: var(--color-textos);
+  font-family: var(--fuente-primary);
+}
+
+.card-titulo {
+  padding: 10px 20px;
+  font-size: 22px;
+}
+
+.card-iconos {
+  color: var(--color-subtitulos);
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+}
+
+.img-iconos {
+  padding-right: 5px;
+}
+
+.p-iconos {
+  padding left: 50px;
+}
+
+.card-precio {
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-botones {
+  padding: 20px;
+}
+
+.boton-destacados {
+  background-color: transparent !important;
+  border: 2px solid #815e0c !important;
+  border-radius: 5px !important;
+  color: var(--color-iconos) !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  padding: 8px 16px !important;
+  cursor: pointer !important;
+  transition: 0.2s ease-in-out !important;
+  z-index: 5 !important;
+}
+
+.boton-destacados:hover {
+  background-color: var(--color-iconos) !important;
+  color: #ffffff !important;
+  transform: scale(1.03) !important;
 }
 
 /* MAIN */
