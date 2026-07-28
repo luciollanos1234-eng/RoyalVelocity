@@ -33,11 +33,13 @@
 body {
   display: flex;
   flex-direction: column;
-   min-height: 100vh;
+  min-height: 100vh;
 }
+
 main {
   flex: 1 0 auto;
 }
+
 h1 {
   font-family: var(--fuente-primary);
   color: var(--color-textos);
@@ -56,9 +58,11 @@ h1 {
   color: var(--color-textos);
   font-weight: 500;
 }
-.hero-filtros{
+
+.hero-filtros {
   width: 70%;
 }
+
 .carousel1 {
   width: 100%;
   height: 50vh;
@@ -79,22 +83,27 @@ h1 {
   left: 10%;
   color: var(--color-textos);
 }
+
 /* MAIN */
 /* NAVBAR */
 nav {
   background-color: var(--color-background);
 }
+
 .pages {
   color: var(--color-iconos);
 }
+
 .icon-nav {
-    width: 90px;
-    height: 90px;
-    color: var(--color-iconos);
+  width: 90px;
+  height: 90px;
+  color: var(--color-iconos);
 }
+
 .Buscar {
   margin-right: 10px;
 }
+
 /* FOOTER */
 footer {
   display: flex;
@@ -106,20 +115,25 @@ footer {
   background-color: var(--color-background);
   font-size: large;
 }
+
 .pages2 {
   color: var(--color-iconos);
   font-size: large;
 }
+
 .redes {
   color: var(--color-textos);
 }
+
 .logo {
   width: 200px;
 }
+
 /* CONTACTO */
 h3 {
   color: var(--color-subtitulos);
 }
+
 .form-contacto {
   max-width: 500px;
   margin: 2rem auto;
@@ -129,21 +143,26 @@ h3 {
   color: white;
   font-family: sans-serif;
 }
+
 .form-contacto h2 {
   color: #ff3333;
   margin-bottom: 0.5rem;
 }
+
 .campo {
   margin-bottom: 1.2rem;
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
 }
+
 .campo label {
   color: #ddd;
   font-size: 0.9rem;
 }
-.campo input, .campo textarea {
+
+.campo input,
+.campo textarea {
   padding: 0.7rem;
   border: none;
   border-radius: 4px;
@@ -151,10 +170,12 @@ h3 {
   color: white;
   border: 1px solid #444;
 }
+
 .campo textarea {
   min-height: 120px;
   resize: vertical;
 }
+
 .form-contacto button {
   width: 100%;
   padding: 0.8rem;
@@ -166,9 +187,11 @@ h3 {
   cursor: pointer;
   transition: background 0.2s;
 }
+
 .form-contacto button:hover {
   background: #cc0000;
 }
+
 /* ERROR404 */
 .error404 {
   width: 100%;
@@ -417,23 +440,28 @@ h4 {
 .publicidad1 {
   background-color: #000000;
 }
-.containerPublicidad1{
+
+.containerPublicidad1 {
   border-radius: 0 15px;
   display: flex;
 }
-.body-publicidad1{
-  background-color:rgb(29, 29, 29);
+
+.body-publicidad1 {
+  background-color: rgb(29, 29, 29);
   color: var(--color-textos);
   padding-left: 30px;
 }
-.img-publicidad1{
+
+.img-publicidad1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.subtitulos-publicidad1{
- margin-top: 30px;
+
+.subtitulos-publicidad1 {
+  margin-top: 30px;
 }
+
 /* MAIN */
 
 /* media queris navbar */
@@ -446,15 +474,18 @@ h4 {
     display: flex;
     justify-content: start;
   }
+
   .media {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
   }
+
   .pages {
     font-size: xx-large;
   }
 }
+
 /* Tabletas: 768px a 991px */
 /* @media (min-width: 768px) and (max-width: 991px) {
   .icon-nav {
@@ -471,14 +502,17 @@ h4 {
     font-size: small;
 
   }
+
   .pages2 {
     font-size: small;
   }
+
   .logo {
     width: 150px;
     height: 150px;
   }
 }
+
 /* Tabletas: 768px a 991px */
 /* @media (min-width: 768px) and (max-width: 991px) {
   footer {
