@@ -205,7 +205,7 @@ h4 {
 }
 
 .card-destacados {
-  background-color: var(--color-cards);
+  background-color: rgb(26, 26, 26);
   color: var(--color-textos);
   font-family: var(--fuente-primary);
   border-radius: 5px;
@@ -265,6 +265,27 @@ h4 {
   transform: scale(1.03) !important;
 }
 
+/* publicidad1 */
+.publicidad1 {
+  background-color: #000000;
+}
+.containerPublicidad1{
+  border-radius: 0 15px;
+  display: flex;
+}
+.body-publicidad1{
+  background-color:rgb(29, 29, 29);
+  color: var(--color-textos);
+  padding-left: 30px;
+}
+.img-publicidad1{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.subtitulos-publicidad1{
+ margin-top: 30px;
+}
 /* MAIN */
 .icon-nav {
   width: 50px;
