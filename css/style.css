@@ -38,9 +38,8 @@ h4 {
   font-family: var(--fuente-secundary);
   font-size: bold;
   color: var(--color-iconos) !important;
-  position: relative;
-  left: 50px;
-  bottom: 5px;
+  padding-left: 50px;
+  padding-bottom: 15px;
 }
 
 .hero {
@@ -148,6 +147,7 @@ h4 {
   transition: 0.3s ease-in-out;
   position: relative;
   z-index: 1;
+  border-radius: 5px;
 }
 
 .imgcarousel:hover {
@@ -161,6 +161,7 @@ h4 {
   color: var(--color-textos);
   font-family: var(--fuente-secundary);
   z-index: 10;
+  pointer-events: none;
 }
 
 .card-text-1 {
@@ -184,6 +185,7 @@ h4 {
   cursor: pointer;
   transition: 0.2s ease-in-out;
   z-index: 5;
+  pointer-events: auto;
 }
 
 
@@ -206,6 +208,12 @@ h4 {
   background-color: var(--color-cards);
   color: var(--color-textos);
   font-family: var(--fuente-primary);
+  border-radius: 5px;
+}
+
+.card-img-top {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
 }
 
 .card-titulo {
@@ -225,7 +233,7 @@ h4 {
 }
 
 .p-iconos {
-  padding left: 50px;
+  padding: 50px;
 }
 
 .card-precio {
