@@ -7,11 +7,11 @@
   <meta name="description" content="Venta de autos deportivos" />
   <meta name="keywords" content="autos deportivos, precios de (marca de auto),RoyalVelocity" />
   <meta name="author" content="rosario ojeda, lucio llanos" />
-  <link rel="stylesheet" href="./css/style.css" />
   <link rel="shortcut icon" href="./assets/img/LogoEmpresa.png" type="image/x-icon" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <title>RoyalVelocity</title>
 </head>
 
@@ -22,6 +22,20 @@
         <div class="collapse navbar-collapse media" id="navbarsExample02">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
+              <a class="nav-link active fs-3 m-1" aria-current="page" href="./pages/Contacto.html"><i
+                  class="bi bi-phone"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-3 m-1" aria-current="page" href="./pages/Nosotros.html"><i
+                  class="bi bi-people"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-3 m-1" aria-current="page" href="./pages/Login.html"><i
+                  class="bi bi-box-arrow-in-right"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active m-1" aria-current="page" href="./pages/detalleproducto.html"><img
+                  class="icon-nav" src="./assets/img/icons8-deporte-64 (2).png" alt="" /></a>
               <a class="nav-link active m-1" aria-current="page" href="./index.html"><img class="icon-nav"
                   src="./assets/img/LogoEmpresa.png" alt="" /></a>
             </li>
@@ -51,20 +65,19 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-6 hero-titulo">
-            <h1 class="titulo">DOMINA LA CARRETERA</h1>
-            <p>Encontra tu auto deportivo alta gama</p>
-          </div>
-        </div>
-        <div class="hero-filtros d-flex justify-content-evenly">
+    <section class="hero d-flex flex-column gap-5">
+      <div class="capa-oscura"></div>
+      <div class="hero-titulo">
+        <h1>DOMINA LA CARRETERA</h1>
+        <p>Encontra tu auto deportivo alta gama</p>
+      </div>
+      <div class="hero-filtros">
+        <div class="d-flex flex-wrap gap-3">
           <div class="boton-filtro">
             <h6>MARCA</h6>
             <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <button class="btn btn-secondary dropdown-toggle boton-transparente" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Seleccioná una marca
               </button>
               <ul class="dropdown-menu">
@@ -79,7 +92,7 @@
           <div class="boton-filtro">
             <h6>MODELO</h6>
             <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              <button class="btn dropdown-toggle boton-transparente" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Seleccioná un modelo
               </button>
@@ -94,8 +107,8 @@
           <div class="boton-filtro">
             <h6>AÑO</h6>
             <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <button class="btn btn-secondary dropdown-toggle boton-transparente" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Seleccioná el año
               </button>
               <ul class="dropdown-menu">
@@ -110,8 +123,8 @@
           <div class="boton-filtro">
             <h6>PRECIO</h6>
             <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
+              <button class="btn btn-secondary dropdown-toggle boton-transparente" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Rango de precio
               </button>
               <ul class="dropdown-menu">
@@ -124,101 +137,262 @@
             </div>
           </div>
           <div class="boton-filtro align-self-end">
-            <button class="btn btn-primary " type="button">Buscar</button>
+            <button type="button" class="btn  boton-buscar">Buscar</button>
           </div>
         </div>
       </div>
     </section>
     <section class="slide-promos">
-      <div id="carouselExample" class="carousel slide">
+      <h4>PROMOCIONES EXCLUSIVAS</h4>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="carousel1 text-bg-dark">
-              <img class="imgcarousel" src="" class="d-block w-100" alt="..." />
-              <div class="letracarousel card-image-overlay">
-                <h5 class="card-title">Ferrari</h5>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to
-                  additional content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="row justify-content-center px-5 g-3">
+              <div class="col-12 col-md-4">
+                <div class="carousel1">
+                  <img src="./assets/img/ferrari.jpg" class="imgcarousel" alt="imagen auto ferrari 269 GTB" />
+                  <div class="letracarousel d-flex flex-column justify-content-start align-items-start gap-5">
+                    <h5 class="card-title">FERRARI 269 GTB</h5>
+                    <div>
+                      <p class="card-text-1">10% OFF</p>
+                      <p class="card-text-2">Entrega inmediata</p>
+                    </div>
+                    <button type="button" class="boton-promo">VER PROMOCION</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="carousel1">
+                  <img src="./assets/img/911carrera.jpg" class="imgcarousel" alt="imagen auto porsche" />
+                  <div class="letracarousel d-flex flex-column justify-content-start align-items-start gap-5">
+                    <h5 class="card-title">PORSCHE 911 CARRERA</h5>
+                    <div>
+                      <p class="card-text-1">Finanaciación exclusiva</p>
+                      <p class="card-text-2">Hasta 60 cuotas</p>
+                    </div>
+                    <button type="button" class="boton-promo">VER PROMOCION</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="carousel1">
+                  <img src="./assets/img/lamborghini.jpg" class="imgcarousel" alt="imagen auto lamborghini" />
+                  <div class="letracarousel d-flex flex-column justify-content-start align-items-start gap-5">
+                    <h5 class="card-title">LAMBORGHINI HURACAN</h5>
+                    <div>
+                      <p class="card-text-1">Edición limitada</p>
+                      <p class="card-text-2">Unidades seleccionadas</p>
+                    </div>
+                    <button type="button" class="boton-promo">VER PROMOCION</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center px-5 g-3">
+              <div class="col-12 col-md-4">
+                <div class="carousel1">
+                  <img src="./assets/img/taycan.jpg" class="imgcarousel" alt="imagen auto taycan" />
+                  <div class="letracarousel d-flex flex-column justify-content-between align-items-start gap-5">
+                    <h5 class="card-title">Taycan Turbo S</h5>
+                    <div>
+                      <p class="card-text-1">Carga Gratuita por 3 Años</p>
+                      <p class="card-text-2"> Red ultra rápida oficial y cargador residencial de regalo.</p>
+                    </div>
+                    <button type="button" class="boton-promo">VER PROMOCION</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="carousel1">
+                  <img src="./assets/img/bmw.webp" class="imgcarousel" alt="imagen auto BMW M4 COMPETITION" />
+                  <div class="letracarousel d-flex flex-column justify-content-between align-items-start gap-5">
+                    <h5 class="card-title">BMW M4 COMPETITION</h5>
+                    <div>
+                      <p class="card-text-1">Tasa 0% de Lanzamiento</p>
+                      <p class="card-text-2">Financiación directa en unidades seleccionadas.</p>
+                    </div>
+                    <button type="button" class="boton-promo">VER PROMOCION</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="carousel1">
+                  <img src="./assets/img/mustang.jpg" class="imgcarousel" alt="imagen auto FORD MUSTANG GT" />
+                  <div class="letracarousel d-flex flex-column justify-content-between align-items-start gap-5">
+                    <h5 class="card-title">FORD MUSTANG GT</h5>
+                    <div>
+                      <p class="card-text-1">Performance Bonificado</p>
+                      <p class="card-text-2">Escape de válvulas activas y frenos Brembo®
+                        gratis.</p>
+                    </div>
+                    <button type="button" class="boton-promo">VER PROMOCION</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="..." />
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </section>
-    <section class="nuevosIngresos container-fluid row gap-3">
-      <div class="card col-3" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card col-3" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card col-3" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="card col-3" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s
-            content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </section>
-    <section class="publicidad1 container-fluid">
-      <div class="card mb-3">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
+    <section class="destacados container-fluid">
+      <h4>COLECCIÓN DESTACADA</h4>
+      <div class="row justify-content-center px-5 g-3">
+        <div class="col-12 col-md-3">
+          <div class="card-destacados">
+            <img src="./assets/img/ferrari.jpg" class="card-img-top" alt="img auto ferrari 269 GT">
+            <div class="card-body p-0">
+              <div class="card-titulo">
+                <p class="card-title">Ferrari 269 GT</p>
+              </div>
+              <div class="card-iconos w-100 d-flex justify-content-between">
+                <p class="card-text"><img class="img-iconos" src="./assets/img/iconoAuto.png" alt="icono auto">830 CV
+                </p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoMotor.png" alt="icono motor">V6
+                  HIBRIDO</p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoSpeedometer.png"
+                    alt="icono velocimetro">330 km/h</p>
+              </div>
+              <div class="card-precio">
+                <p class="card-text">Desde USD 420.000</p>
+              </div>
+              <div class="card-botones d-flex justify-content-between gap-1">
+                <a href="#" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="#" class="btn boton-destacados"><img src="./assets/img/iconoCarrito.png"
+                    alt="icono carrito de carritoCompras"></a>
+              </div>
+            </div>
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card-destacados">
+            <img src="./assets/img/ferrari.jpg" class="card-img-top" alt="img auto ferrari 269 GT">
+            <div class="card-body p-0">
+              <div class="card-titulo">
+                <p class="card-title">FERARRI 269 GT</p>
+              </div>
+              <div class="card-iconos w-100 d-flex justify-content-between">
+                <p class="card-text"><img class="img-iconos" src="./assets/img/iconoAuto.png" alt="icono auto">830 CV
+                </p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoMotor.png" alt="icono motor">V6
+                  HIBRIDO</p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoSpeedometer.png"
+                    alt="icono velocimetro">330 km/h</p>
+              </div>
+              <div class="card-precio">
+                <p class="card-text">Desde USD 420.000</p>
+              </div>
+              <div class="card-botones d-flex justify-content-between gap-1">
+                <a href="#" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="#" class="btn boton-destacados"><img src="./assets/img/iconoCarrito.png"
+                    alt="icono carrito de carritoCompras"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card-destacados">
+            <img src="./assets/img/ferrari.jpg" class="card-img-top" alt="img auto ferrari 269 GT">
+            <div class="card-body p-0">
+              <div class="card-titulo">
+                <p class="card-title">FERARRI 269 GT</p>
+              </div>
+              <div class="card-iconos w-100 d-flex justify-content-between">
+                <p class="card-text"><img class="img-iconos" src="./assets/img/iconoAuto.png" alt="icono auto">830 CV
+                </p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoMotor.png" alt="icono motor">V6
+                  HIBRIDO</p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoSpeedometer.png"
+                    alt="icono velocimetro">330 km/h</p>
+              </div>
+              <div class="card-precio">
+                <p class="card-text">Desde USD 420.000</p>
+              </div>
+              <div class="card-botones d-flex justify-content-between gap-1">
+                <a href="#" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="#" class="btn boton-destacados"><img src="./assets/img/iconoCarrito.png"
+                    alt="icono carrito de carritoCompras"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card-destacados">
+            <img src="./assets/img/ferrari.jpg" class="card-img-top" alt="img auto ferrari 269 GT">
+            <div class="card-body p-0">
+              <div class="card-titulo">
+                <p class="card-title">FERARRI 269 GT</p>
+              </div>
+              <div class="card-iconos w-100 d-flex justify-content-between">
+                <p class="card-text"><img class="img-iconos" src="./assets/img/iconoAuto.png" alt="icono auto">830 CV
+                </p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoMotor.png" alt="icono motor">V6
+                  HIBRIDO</p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoSpeedometer.png"
+                    alt="icono velocimetro">330 km/h</p>
+              </div>
+              <div class="card-precio">
+                <p class="card-text">Desde USD 420.000</p>
+              </div>
+              <div class="card-botones d-flex justify-content-between gap-1">
+                <a href="#" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="#" class="btn boton-destacados"><img src="./assets/img/iconoCarrito.png"
+                    alt="icono carrito de carritoCompras" class="carrito"></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="destacados container-fluid row gap-3">
+    <section class="publicidad1 container-fluid">
+      <div class="row containerPublicidad1">
+        <div class="col-md-5 p-0">
+          <img src="./assets/img/Publicidad1.jpg" class="img-publicidad1" alt="imagen acortada revision tecnica">
+        </div>
+        <div class="body-publicidad1 col-md-7 d-flex flex-column justify-content-center">
+          <div class="titulo-publicidad1">
+            <h5 class="card-title">EXPERIENCIA ROYAL VELOCITY</h5>
+            <p class="card-text">Cada vehículo es inspeccionado por especialistas y entregado con certificación de
+              calidad.</p>
+          </div>
+          <div class="subtitulos-publicidad1">
+            <div class="row">
+              <div class="col-12 col-md-4 d-flex align-items-center gap-2">
+                <img src="./assets/img/iconoAuto.png" alt="icono auto">
+                <p class="mb-0">Calidad Certificada</p>
+              </div>
+              <div class="col-12 col-md-4 d-flex align-items-center gap-2">
+                <img src="./assets/img/iconoMotor.png" alt="icono motor">
+                <p class="mb-0">Atención personalizada</p>
+              </div>
+              <div class="col-12 col-md-4 d-flex align-items-center gap-2">
+                <img src="./assets/img/iconoSpeedometer.png" alt="icono velocimetro">
+                <p class="mb-0">Servicio postventa premium</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="nuevos-ingresos container-fluid row gap-3">
+      <h4>NUEVOS INGRESOS</h4>
       <div class="card col-3" style="width: 18rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
@@ -276,11 +450,21 @@
   </main>
   <footer>
     <div class="col mb-3">
-      <a href="./index.html"><img class="logo" src="./assets/img/LogoEmpresa.png" alt="logo"></a>
+      <a href="./index.html"><img class="logo" src="./assets/img/LogoEmpresa.png" alt=""></a>
     </div>
     <div class="col mb-3">
       <ul class="nav flex-column">
         <li class="nav-item mb-3">
+          <a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-instagram"></i> instagram</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-facebook"></i> facebook</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="#" class="nav-link p-0 text-body-secondary"><i class="bi bi-whatsapp"></i> whatsapp</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="./pages/Contacto.html" class="nav-link p-0 text-body-secondary"><i class="bi bi-people">
           <a href="./pages/Error404.html" class="nav-link p-0 text-light"><i class="bi bi-instagram pages2"></i>
             instagram</a>
         </li>
@@ -301,6 +485,19 @@
     <div class="col mb-3">
       <ul class="nav flex-column">
         <li class="nav-item mb-3">
+          <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="#" class="nav-link p-0 text-body-secondary">About</a>
           <a href="./index.html" class="nav-link p-0 text-light"><i class="bi bi-house-door pages2"></i> Inicio</a>
         </li>
         <li class="nav-item mb-3">

@@ -9,7 +9,7 @@
 
 :root {
   --color-textos: #ffffff;
-  --color-subtitulos: #ebebeb;
+  --color-subtitulos: #b1aeae;
   /* hover, botones y iconos: */
   --color-iconos: #815e0c;
   /* fondos */
@@ -29,20 +29,17 @@
 }
 
 /* MAIN */
-
-body {
-  display: flex;
-  flex-direction: column;
-   min-height: 100vh;
-}
-main {
-  flex: 1 0 auto;
-}
 h1 {
   font-family: var(--fuente-primary);
-  color: var(--color-textos);
-  font-weight: 600;
-  margin-bottom: 1rem;
+  font-size: 45px !important;
+}
+
+h4 {
+  font-family: var(--fuente-secundary);
+  font-size: bold;
+  color: var(--color-iconos) !important;
+  padding-left: 50px;
+  padding-bottom: 15px;
 }
 
 .hero {
@@ -54,39 +51,259 @@ h1 {
   width: 100%;
   font-family: var(--fuente-secundary);
   color: var(--color-textos);
-  font-weight: 500;
+  position: relative;
+  z-index: 2;
 }
-.hero-filtros{
-  width: 70%;
-}
-.carousel1 {
+
+.capa-oscura {
   width: 100%;
-  height: 50vh;
+  height: 100%;
+  background-color: #00000062;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero-titulo {
+  width: 100%;
+  font-size: 20px;
+}
+
+.hero-filtros {
+  width: 80%;
+}
+
+.boton-transparente {
+  color: var(--color-textos) !important;
+  background-color: #48484821 !important;
+  backdrop-filter: blur(2px);
+  transition: 0.3 ease;
+  border: none !important;
+}
+
+.boton-transparente:hover {
+  background-color: rgba(0, 0, 0, 0.786) !important;
+}
+
+.dropdown-menu {
+  background-color: #0000004b !important;
+}
+
+.dropdown-item {
+  background-color: #000000;
+  color: var(--color-textos) !important;
+}
+
+.dropdown-item:hover {
+  background-color: #000000 !important;
+  color: var(--color-textos) !important;
+}
+
+.boton-buscar {
+  color: var(--color-textos) !important;
+  background-color: #815e0c97 !important;
+  backdrop-filter: blur(2px);
+  transition: transform 0.2s ease-in-out;
+  width: 100PX;
+}
+
+.boton-buscar:hover {
+  transform: scale(1.05);
+}
+
+/* slide-promos */
+.slide-promos {
+  background-color: #000000;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  top: 300px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 20 !important;
+  width: 3rem !important;
+}
+
+.carousel1 {
+  width: 100% !important;
+  height: 40vh;
   position: relative;
 }
 
 .imgcarousel {
   width: 100%;
-  height: 50vh;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
+  filter: brightness(0.4) !important;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.imgcarousel:hover {
+  filter: brightness(1) !important;
 }
 
 .letracarousel {
-  width: 100%;
-  height: 60vh;
-  position: absolute;
-  top: 50%;
-  left: 10%;
+  position: absolute !important;
+  top: 30px;
+  left: 30px;
   color: var(--color-textos);
+  font-family: var(--fuente-secundary);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.card-text-1 {
+  color: var(--color-iconos);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card-text-2 {
+  color: var(--color-subtitulos);
+}
+
+.boton-promo {
+  background-color: transparent;
+  border: 2px solid #815e0c;
+  border-radius: 5px;
+  color: var(--color-iconos);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+
+.boton-promo:hover {
+  background-color: var(--color-iconos) !important;
+  color: #ffffff;
+  transform: scale(1.03);
+}
+
+/* slide-promos */
+
+/* destacados */
+.destacados {
+  background-color: #000000;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.card-destacados {
+  background-color: rgb(26, 26, 26);
+  color: var(--color-textos);
+  font-family: var(--fuente-primary);
+  border-radius: 5px;
+}
+
+.card-img-top {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}
+
+.card-titulo {
+  padding: 10px 20px;
+  font-size: 22px;
+}
+
+.card-iconos {
+  color: var(--color-subtitulos);
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+}
+
+.img-iconos {
+  padding-right: 5px;
+}
+
+.p-iconos {
+  padding: 50px;
+}
+
+.card-precio {
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.card-botones {
+  padding: 20px;
+}
+
+.boton-destacados {
+  background-color: transparent !important;
+  border: 2px solid #815e0c !important;
+  border-radius: 5px !important;
+  color: var(--color-iconos) !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  padding: 8px 16px !important;
+  cursor: pointer !important;
+  transition: 0.2s ease-in-out !important;
+  z-index: 5 !important;
+}
+
+.boton-destacados:hover {
+  background-color: var(--color-iconos) !important;
+  color: #ffffff !important;
+  transform: scale(1.03) !important;
+}
+
+/* publicidad1 */
+.publicidad1 {
+  background-color: #000000;
+}
+.containerPublicidad1{
+  border-radius: 0 15px;
+  display: flex;
+}
+.body-publicidad1{
+  background-color:rgb(29, 29, 29);
+  color: var(--color-textos);
+  padding-left: 30px;
+}
+.img-publicidad1{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.subtitulos-publicidad1{
+ margin-top: 30px;
 }
 /* MAIN */
 /* NAVBAR */
 nav {
   background-color: var(--color-background);
 }
+
 .pages {
   color: var(--color-iconos);
 }
+
+.redes {
+  color: var(--color-textos);
+}
+
+.icon-nav {
+  width: 35px;
+  margin-top: 2px;
+  color: var(--color-iconos);
 .icon-nav {
     width: 90px;
     height: 90px;
@@ -120,6 +337,7 @@ footer {
 h3 {
   color: var(--color-subtitulos);
 }
+
 .form-contacto {
   max-width: 500px;
   margin: 2rem auto;
@@ -131,6 +349,7 @@ h3 {
 }
 .form-contacto h2 {
   color: #ff3333;
+  /* Rojo acorde a tu logo */
   margin-bottom: 0.5rem;
 }
 .campo {
@@ -143,6 +362,9 @@ h3 {
   color: #ddd;
   font-size: 0.9rem;
 }
+
+.campo input,
+.campo textarea {
 .campo input, .campo textarea {
   padding: 0.7rem;
   border: none;
@@ -169,6 +391,7 @@ h3 {
 .form-contacto button:hover {
   background: #cc0000;
 }
+
 /* ERROR404 */
 .error404 {
   width: 100%;
@@ -197,6 +420,10 @@ h3 {
 /* Tabletas: 768px a 991px */
 /* @media (min-width: 768px) and (max-width: 991px) {
   .icon-nav {
+    width: 45px;
+
+    width: 31px;
+
    
   }
 } */
