@@ -315,22 +315,55 @@ h4 {
   object-fit: cover;
 }
 /* PUBLICIDAD 2 */
+.publicidad2{
+  background-color: #0f0f0f;
+  color: var(--color-textos);
+  font-family: var(--fuente-primary);
+  padding: 30px 20px 5px 30px;
+}
+.card-img1{
+  width: 30%;
+}
 .img-publicidad2{
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.card-publicidad2{
+  font-size: 30px;
+  width: 50%;
+}
+.card-oferta{
+  width: 10%;
+}
+.card-img-publicidad2{
+  width: 50%;
+  margin-right: 10px;
+}
+.titulo-card{
+  font-size: 1.8rem;
+}
+.numero{
+  font-size: 70px;
   margin: 0;
   padding: 0;
 }
+.subtitulo-card{
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
 .boton-publicidad2{
   display: block;
-  width: 30%;
+  font-family: var(--fuente-secundary);
+  font-size: 15px;
+  width: 50%;
   background-color: transparent;
   border: 2px solid #815e0c;
   border-radius: 5px;
   color: var(--color-iconos);
-  font-size: 14px;
   font-weight: bold;
+  margin-top: 20px;
   padding: 8px 16px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
