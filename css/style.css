@@ -307,53 +307,64 @@ h4 {
 .subtitulos-publicidad1 {
   margin-top: 30px;
 }
+
 /* nuevos ingresos */
-.card-nuevo{
+.card-nuevo {
   padding: 10px;
   width: 500px;
   height: 200px;
   object-fit: cover;
 }
+
 /* PUBLICIDAD 2 */
-.publicidad2{
+.publicidad2 {
   background-color: #0f0f0f;
   color: var(--color-textos);
   font-family: var(--fuente-primary);
   padding: 30px 20px 5px 30px;
 }
-.card-img1{
-  width: 30%;
+
+.card-img1 {
+  margin-left: 50px;
 }
-.img-publicidad2{
+
+.img-publicidad2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.card-publicidad2{
+
+.card-publicidad2 {
   font-size: 30px;
   width: 50%;
 }
-.card-oferta{
-  width: 10%;
+
+.card-oferta {
+  width: 20%;
 }
-.card-img-publicidad2{
+
+.card-img-publicidad2 {
   width: 50%;
   margin-right: 10px;
 }
-.titulo-card{
+
+.titulo-card {
   font-size: 1.8rem;
 }
-.numero{
+
+.numero {
   font-size: 70px;
   margin: 0;
   padding: 0;
 }
-.subtitulo-card{
+
+.subtitulo-card {
   font-size: 1.2rem;
   padding: 0;
   margin: 0;
 }
-.boton-publicidad2{
+
+.boton-publicidad2 {
   display: block;
   font-family: var(--fuente-secundary);
   font-size: 15px;
@@ -370,11 +381,13 @@ h4 {
   z-index: 5;
   pointer-events: auto;
 }
+
 .boton-publicidad2:hover {
   background-color: var(--color-iconos) !important;
   color: #ffffff;
   transform: scale(1.03);
 }
+
 /* MAIN */
 /* NAVBAR */
 nav {
