@@ -9,6 +9,7 @@
 
 :root {
   --color-textos: #ffffff;
+  --color-titulo: red;
   --color-subtitulos: #ebebeb;
   /* hover, botones y iconos: */
   --color-iconos: #815e0c;
@@ -32,6 +33,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--color-background);
+}
+.bg {
+  background-color: var(--color-background);
 }
 
 main {
@@ -435,7 +440,7 @@ footer {
 }
 
 /* CONTACTO */
-h3 {
+.Contacto {
   color: var(--color-subtitulos);
 }
 
@@ -443,14 +448,14 @@ h3 {
   max-width: 500px;
   margin: 2rem auto;
   padding: 2rem;
-  background: #111;
+  background: var(--color-cards);
   border-radius: 8px;
-  color: white;
+  color: var(--color-textos);
   font-family: sans-serif;
 }
 
 .form-contacto h2 {
-  color: #ff3333;
+  color: var( --color-titulo);
   margin-bottom: 0.5rem;
 }
 
@@ -462,8 +467,8 @@ h3 {
 }
 
 .campo label {
-  color: #ddd;
-  font-size: 0.9rem;
+  color: var(--color-textos);
+  font-size: large;
 }
 
 .campo input,
@@ -471,8 +476,8 @@ h3 {
   padding: 0.7rem;
   border: none;
   border-radius: 4px;
-  background: #222;
-  color: white;
+  background: var(--color-cards);
+  color: var(--color-textos);
   border: 1px solid #444;
 }
 
@@ -484,8 +489,8 @@ h3 {
 .form-contacto button {
   width: 100%;
   padding: 0.8rem;
-  background: #ff3333;
-  color: white;
+  background: var(--color-titulo);
+  color: var(--color-textos);
   border: none;
   border-radius: 4px;
   font-weight: bold;
@@ -494,7 +499,15 @@ h3 {
 }
 
 .form-contacto button:hover {
-  background: #cc0000;
+  background: var(--color-titulo);
+}
+.maps {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--color-cards);
+  border-radius: 8px;
+  font-family: sans-serif;
 }
 
 /* ERROR404 */
