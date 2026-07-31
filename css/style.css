@@ -10,22 +10,36 @@
 :root {
   --color-textos: #ffffff;
   --color-subtitulos: #ebebeb;
-  /* hover, botones y iconos: */
   --color-iconos: #815e0c;
-  /* fondos */
+  --color-botones: #815e0c97;
   --color-background: #000000;
   --color-cards: #262626;
-  /* fuentes */
   --fuente-primary: "Titillium Web", sans-serif;
-  font-weight: bold;
-  font-style: normal;
-
   --fuente-secundary: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
 
-  /* efectos de boton */
+  /* Estilo boton */
+    {
+    font-family: var(--fuente-secundary) !important;
+    color: var(--color-textos) !important;
+    background-color: #57575721 !important;
+    backdrop-filter: blur(2px);
+    border: none !important;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out !important;
+    z-index: 5;
+    pointer-events: auto;
+  }
+
+  /* hover boton*/
+    {
+    background-color: #815e0c97 !important;
+    color: #ffffff;
+  }
+
 }
 
 body {
@@ -91,16 +105,16 @@ h4 {
   color: var(--color-textos) !important;
   background-color: #48484821 !important;
   backdrop-filter: blur(2px);
-  transition: 0.3 ease;
+  transition: 0.6s ease-in-out !important;
   border: none !important;
 }
 
 .boton-transparente:hover {
-  background-color: rgba(0, 0, 0, 0.786) !important;
+  background-color: var(--color-botones) !important;
 }
 
 .dropdown-menu {
-  background-color: #0000004b !important;
+  background-color: #00000075 !important;
 }
 
 .dropdown-item {
@@ -109,7 +123,7 @@ h4 {
 }
 
 .dropdown-item:hover {
-  background-color: #000000 !important;
+  background-color: var(--color-iconos) !important;
   color: var(--color-textos) !important;
 }
 
@@ -187,26 +201,44 @@ h4 {
 }
 
 .boton-promo {
-  display: block;
-  width: 100%;
-  background-color: transparent;
-  border: 2px solid #815e0c;
+  color: var(--color-textos) !important;
+  background-color: #57575721 !important;
+  backdrop-filter: blur(2px);
+  border: none !important;
   border-radius: 5px;
-  color: var(--color-iconos);
   font-size: 14px;
   font-weight: bold;
   padding: 8px 16px;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.6s ease-in-out;
   z-index: 5;
   pointer-events: auto;
 }
 
-
 .boton-promo:hover {
-  background-color: var(--color-iconos) !important;
+  background-color: #815e0c97 !important;
   color: #ffffff;
-  transform: scale(1.03);
+}
+
+.boton-destacados {
+  font-family: var(--fuente-secundary) !important;
+  color: var(--color-textos) !important;
+  background-color: #57575721 !important;
+  backdrop-filter: blur(2px);
+  border: none !important;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.6s ease-in-out !important;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+.boton-destacados:hover {
+  background-color: #815e0c97 !important;
+  color: #ffffff;
 }
 
 /* slide-promos */
@@ -263,26 +295,6 @@ h4 {
   padding: 20px;
 }
 
-.boton-destacados {
-  background-color: transparent !important;
-  border: 2px solid #815e0c !important;
-  border-radius: 5px !important;
-  color: var(--color-iconos) !important;
-  font-family: var(--fuente-secundary) !important;
-  font-size: 14px !important;
-  font-weight: bold !important;
-  padding: 8px 16px !important;
-  cursor: pointer !important;
-  transition: 0.2s ease-in-out !important;
-  z-index: 5 !important;
-}
-
-.boton-destacados:hover {
-  background-color: var(--color-iconos) !important;
-  color: #ffffff !important;
-  transform: scale(1.03) !important;
-}
-
 /* publicidad1 */
 .publicidad1 {
   background-color: #000000;
@@ -326,7 +338,11 @@ h4 {
 }
 
 .card-img1 {
-  margin-left: 50px;
+  margin-left: 10px;
+}
+
+.icono-publicidad2 {
+  width: 55px;
 }
 
 .img-publicidad2 {
@@ -337,7 +353,8 @@ h4 {
 
 .card-publicidad2 {
   font-size: 30px;
-  width: 50%;
+  width: 40%;
+  margin-left: 20px;
 }
 
 .card-oferta {
@@ -366,27 +383,24 @@ h4 {
 }
 
 .boton-publicidad2 {
-  display: block;
-  font-family: var(--fuente-secundary);
-  font-size: 15px;
-  width: 50%;
-  background-color: transparent;
-  border: 2px solid #815e0c;
+  font-family: var(--fuente-secundary) !important;
+  color: var(--color-textos) !important;
+  background-color: #57575721 !important;
+  backdrop-filter: blur(2px);
+  border: none !important;
   border-radius: 5px;
-  color: var(--color-iconos);
+  font-size: 14px;
   font-weight: bold;
-  margin-top: 20px;
   padding: 8px 16px;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  transition: 0.6s ease-in-out !important;
   z-index: 5;
   pointer-events: auto;
 }
 
 .boton-publicidad2:hover {
-  background-color: var(--color-iconos) !important;
+  background-color: #815e0c97 !important;
   color: #ffffff;
-  transform: scale(1.03);
 }
 
 @media (max-width: 575.98px) {
@@ -432,6 +446,11 @@ h4 {
 
   .boton-filtro {
     padding-bottom: 15px;
+  }
+
+  .publicidad2 {
+    display: flex;
+    flex-direction: column;
   }
 }
 
