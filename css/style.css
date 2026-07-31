@@ -32,6 +32,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--color-background);
+}
+.bg {
+  background-color: var(--color-background);
 }
 
 main {
@@ -435,7 +439,7 @@ footer {
 }
 
 /* CONTACTO */
-h3 {
+.Contacto {
   color: var(--color-subtitulos);
 }
 
