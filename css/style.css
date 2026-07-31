@@ -509,6 +509,13 @@ footer {
   border-radius: 8px;
   font-family: sans-serif;
 }
+/* Nosotros */
+.nosotros {
+  color: var(--color-titulo);
+}
+.parrafo {
+  color: var(--color-textos);
+}
 
 /* ERROR404 */
 .error404 {
