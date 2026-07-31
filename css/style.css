@@ -581,3 +581,69 @@ footer {
   }
 }
  */
+ /* css carrito */
+.carrito{ 
+   background-color: var(--color-background)
+}
+.tit-carrito{
+  display: flex;
+ justify-content: baseline;
+  align-items: center;
+height: 50vh;
+background-image: url(../assets/img/imgcarrtio/pexels-svjae-4069858.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+
+}
+
+.tcard-carrito{
+display: flex;
+  justify-content: center;
+  align-items: center;
+height: 40vh;
+ 
+
+}
+.tcard-carrito0{
+  color:var(--color-textos);
+  font-family: var(--fuente-primary);
+  text-decoration: underline;
+  text-decoration-color:  #815e0c;
+  text-decoration-thickness: 5px;
+}
+
+.let-carrito{
+  color: var(--color-textos);
+  font-family: var(--fuente-primary);
+ 
+}
+.let-carrito1{
+  color: var(--color-subtitulos);
+  font-family: var(--fuente-secundary);
+}
+.card-carrito{
+  display: flex;
+  
+  gap: 100px;
+  border-bottom: 1px;
+ margin-left: 150px;
+ width: 400px;
+}
+.carrito-hijo{
+  width: 00px;
+  height: 200px,
+  
+}
+/* lista derecha "resumen del pedido" */
+.lista-carrito{
+  display: contents;
+  
+ 
+}
+.list-carrito{
+  display: flex;
+  gap: 90px;
+}
+/* css carrito */
+ */
