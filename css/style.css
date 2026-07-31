@@ -9,6 +9,7 @@
 
 :root {
   --color-textos: #ffffff;
+  --color-titulo: red;
   --color-subtitulos: #ebebeb;
   /* hover, botones y iconos: */
   --color-iconos: #815e0c;
@@ -454,7 +455,7 @@ footer {
 }
 
 .form-contacto h2 {
-  color: #ff3333;
+  color: var( --color-titulo);
   margin-bottom: 0.5rem;
 }
 
@@ -467,7 +468,7 @@ footer {
 
 .campo label {
   color: #ddd;
-  font-size: 0.9rem;
+  font-size: large;
 }
 
 .campo input,
@@ -498,7 +499,7 @@ footer {
 }
 
 .form-contacto button:hover {
-  background: #cc0000;
+  background: var(--color-titulo);
 }
 
 /* ERROR404 */
