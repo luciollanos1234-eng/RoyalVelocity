@@ -18,28 +18,25 @@
   --fuente-secundary: "Manrope", sans-serif;
 
   /* Estilo boton */
-  /*   {
-    font-family: var(--fuente-secundary) !important;
-    color: var(--color-textos) !important;
-    background-color: #57575721 !important;
-    backdrop-filter: blur(2px);
-    border: none !important;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: 0.4s ease-in-out !important;
-    z-index: 5;
-    pointer-events: auto;
-  } */
+/*  .boton-promo {
+  color: var(--color-textos) !important;
+  background-color: #5757574b !important;
+  backdrop-filter: blur(2px);
+  border: none !important;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  z-index: 5;
+  pointer-events: auto;
+}
 
-  /* hover boton*/
-  /*  {
-    background-color: #815e0c97 !important;
-    color: #ffffff;
-  } */
-
+.boton-promo:hover {
+  background-color: #815e0c97 !important;
+  color: #ffffff;
+} */
 }
 
 body {
