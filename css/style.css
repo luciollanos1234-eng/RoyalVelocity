@@ -18,7 +18,7 @@
   --fuente-secundary: "Manrope", sans-serif;
 
   /* Estilo boton */
-    {
+  /*   {
     font-family: var(--fuente-secundary) !important;
     color: var(--color-textos) !important;
     background-color: #57575721 !important;
@@ -29,16 +29,16 @@
     font-weight: bold;
     padding: 8px 16px;
     cursor: pointer;
-    transition: 0.6s ease-in-out !important;
+    transition: 0.4s ease-in-out !important;
     z-index: 5;
     pointer-events: auto;
-  }
+  } */
 
   /* hover boton*/
-    {
+  /*  {
     background-color: #815e0c97 !important;
     color: #ffffff;
-  }
+  } */
 
 }
 
@@ -54,9 +54,15 @@ main {
 
 
 /* MAIN */
+.hero-titulo {
+  width: 100% !important;
+  padding-top: 40px;
+}
+
 h1 {
   font-family: var(--fuente-primary);
   font-size: 45px !important;
+  width: 100% !important;
 }
 
 h4 {
@@ -72,7 +78,6 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 60px;
   width: 100%;
   font-family: var(--fuente-secundary);
   color: var(--color-textos);
@@ -105,7 +110,7 @@ h4 {
   color: var(--color-textos) !important;
   background-color: #48484821 !important;
   backdrop-filter: blur(2px);
-  transition: 0.6s ease-in-out !important;
+  transition: 0.4s ease-in-out !important;
   border: none !important;
 }
 
@@ -131,12 +136,14 @@ h4 {
   color: var(--color-textos) !important;
   background-color: #815e0c97 !important;
   backdrop-filter: blur(2px);
-  transition: transform 0.2s ease-in-out;
-  width: 100PX;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 22px;
 }
 
 .boton-buscar:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 /* * slide-promos */
@@ -147,8 +154,8 @@ h4 {
 }
 
 .carousel-indicators {
-  position: absolute;
-  top: 300px;
+  z-index: 80 !important;
+  bottom: -50px !important;
 }
 
 .carousel-control-prev,
@@ -169,7 +176,7 @@ h4 {
   object-fit: cover;
   object-position: center;
   filter: brightness(0.2) !important;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
   position: relative;
   z-index: 1;
   border-radius: 5px;
@@ -210,7 +217,7 @@ h4 {
   font-weight: bold;
   padding: 8px 16px;
   cursor: pointer;
-  transition: 0.6s ease-in-out;
+  transition: 0.4s ease-in-out;
   z-index: 5;
   pointer-events: auto;
 }
@@ -231,7 +238,7 @@ h4 {
   font-weight: bold;
   padding: 8px 16px;
   cursor: pointer;
-  transition: 0.6s ease-in-out !important;
+  transition: 0.4s ease-in-out !important;
   z-index: 5;
   pointer-events: auto;
 }
@@ -298,9 +305,6 @@ h4 {
 /* publicidad1 */
 .publicidad1 {
   background-color: #000000;
-}
-
-.containerPublicidad1 {
   border-radius: 0 15px;
   display: flex;
 }
@@ -324,6 +328,13 @@ h4 {
 /* nuevos ingresos */
 .card-nuevo {
   padding: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-audi {
+  padding: 10px;
   width: 500px;
   height: 200px;
   object-fit: cover;
@@ -334,7 +345,8 @@ h4 {
   background-color: #0f0f0f;
   color: var(--color-textos);
   font-family: var(--fuente-primary);
-  padding: 30px 20px 5px 30px;
+  padding-left: 90px;
+  padding-top: 30px;
 }
 
 .card-img1 {
@@ -346,7 +358,7 @@ h4 {
 }
 
 .img-publicidad2 {
-  width: 100%;
+  width: 79%;
   height: 100%;
   object-fit: cover;
 }
@@ -359,6 +371,7 @@ h4 {
 
 .card-oferta {
   width: 20%;
+  font-weight: 500;
 }
 
 .card-img-publicidad2 {
@@ -368,6 +381,8 @@ h4 {
 
 .titulo-card {
   font-size: 1.8rem;
+  color: var(--color-iconos);
+  font-weight: bold !important;
 }
 
 .numero {
@@ -405,24 +420,34 @@ h4 {
 
 @media (max-width: 575.98px) {
   .hero {
+    background-image: url(../assets/img/Hero1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    font-family: var(--fuente-secundary);
+    color: var(--color-textos);
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
   }
 
   h1 {
+    font-family: var(--fuente-primary);
     font-size: 30px !important;
   }
 
   .hero-titulo {
-    width: 100vw;
+    width: 100%;
+    font-size: 20px;
   }
 
   .hero-filtros {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -448,10 +473,91 @@ h4 {
     padding-bottom: 15px;
   }
 
+  .boton-transparente:hover {
+    background-color: var(--color-botones) !important;
+  }
+
+  .dropdown-menu {
+    background-color: #000000da !important;
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 20px !important;
+  }
+
+  .dropdown-item {
+    background-color: #000000;
+    color: var(--color-textos) !important;
+  }
+
+  .dropdown-item:hover {
+    background-color: var(--color-iconos) !important;
+    color: var(--color-textos) !important;
+  }
+
   .publicidad2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 20px;
   }
+
+  .card-publicidad2 {
+    margin: 0;
+    z-index: 2;
+    width: 90%;
+    min-width: 70%;
+    text-align: left;
+  }
+
+  .icono-publicidad2 {
+    display: none;
+  }
+
+  .titulo-card {
+    font-size: 18px;
+    z-index: 2;
+    width: 100%;
+    text-align: left;
+  }
+
+  .subtitulo-card {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .img-publicidad2 {
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    left: 90px;
+    width: 500px;
+    height: 200px;
+    z-index: 1;
+    filter: brightness(40%);
+  }
+
+  .card-oferta {
+    z-index: 2;
+    width: 10%;
+    padding-top: 15px;
+    text-align: center;
+  }
+
+  .card-oferta p {
+    line-height: 1.1 !important;
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .card-oferta .numero {
+    line-height: 0.9 !important;
+  }
+
 }
 
 /* MAIN */
