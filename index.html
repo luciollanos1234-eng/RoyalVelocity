@@ -599,7 +599,7 @@
             <!-- TÍTULO DE LA MODAL
                - id="loginModalLabel": Se conecta con el atributo aria-labelledby del contenedor principal para la accesibilidad.
                - mb-4: Aplica un margen hacia abajo para separarlo del primer campo de texto. -->
-            <h5 class="modal-title mb-4" id="loginModalLabel">INGRESAR AL PERFIL</h5>
+            <h5 class="modal-title mt-3 mb-3" id="loginModalLabel">INGRESAR AL PERFIL</h5>
 
             <!-- EL FORMULARIO DE ACCESO
                - action="404.html": Indica que cuando el usuario complete todo correctamente e intente enviar el formulario,
@@ -610,7 +610,7 @@
                  - mb-3: Margen inferior estándar de Bootstrap para separar un campo del otro. -->
               <div class="mb-3">
                 <!-- label-modal: Clase en tu CSS para pintar la etiqueta del título en color gris elegante -->
-                <label class="label-modal">USUARIO O EMAIL</label>
+                <label class="label-modal p-1">USUARIO O EMAIL</label>
                 <!-- form-control: Estiliza la caja de texto nativa de Bootstrap.
                    - minlength y maxlength: Atributos HTML5 que restringen que el texto tenga entre 4 y 50 caracteres obligatoriamente.
                    - required: Impide que el formulario se envíe si este campo está vacío. -->
@@ -620,7 +620,7 @@
 
               <!-- CAMPO DE CONTRASEÑA -->
               <div class="mb-3">
-                <label class="label-modal">CONTRASEÑA</label>
+                <label class="label-modal p-1">CONTRASEÑA</label>
                 <!-- type="password": Oculta los caracteres transformándolos en puntos negros por seguridad.
                    - minlength y maxlength: Restringen la contraseña estrictamente entre 8 y 20 caracteres. -->
                 <input type="password" class="form-control input-login" minlength="8" maxlength="20"

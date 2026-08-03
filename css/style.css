@@ -435,6 +435,7 @@ h4 {
   color: var(--color-textos);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  position: relative;
 }
 
 .img-modal-login {
@@ -468,7 +469,11 @@ span {
   color: var(--color-subtitulos) !important;
   border: var(--color-subtitulos) solid 1px !important;
 }
-
+.boton-cierre-modal{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 @media (max-width: 575.98px) {
   .hero {
     background-image: url(../assets/img/Hero1.png);
@@ -607,6 +612,28 @@ span {
 
   .card-oferta .numero {
     line-height: 0.9 !important;
+  }
+  .modal-title{
+    font-size: 0.9rem !important;
+  }
+
+  .label-modal{
+    font-size: 0.8rem !important;
+  }
+  .input-login{
+    font-size: 0.7rem !important;
+  }
+  .link-recuperar{
+    font-size: 0.7rem !important;
+  }
+  .boton-ingresar-modal{
+    font-size: 0.8rem !important;
+  }
+  span{
+    font-size: 0.8rem !important;
+  }
+  .boton-redes{
+    font-size: 0.8rem !important;
   }
 }
 
