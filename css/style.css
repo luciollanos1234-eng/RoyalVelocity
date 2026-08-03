@@ -14,12 +14,14 @@
   --color-iconos: #815e0c;
   --color-botones: #815e0c97;
   --color-background: #000000;
-  --color-cards: #262626;
+  --color-cards: #151515;
+  --boton-transparente: #5757574b;
+  --color-cards-transparente: #020202e3;
   --fuente-primary: "Titillium Web", sans-serif;
   --fuente-secundary: "Manrope", sans-serif;
 
   /* Estilo boton */
-/*  .boton-promo {
+  /*  .boton-promo {
   color: var(--color-textos) !important;
   background-color: #5757574b !important;
   backdrop-filter: blur(2px);
@@ -46,6 +48,7 @@ body {
   min-height: 100vh;
   background-color: var(--color-background);
 }
+
 .bg {
   background-color: var(--color-background);
 }
@@ -262,7 +265,7 @@ h4 {
 }
 
 .card-destacados {
-  background-color: rgb(26, 26, 26);
+  background-color: var(--color-cards);
   color: var(--color-textos);
   font-family: var(--fuente-primary);
   border-radius: 5px;
@@ -314,7 +317,7 @@ h4 {
 }
 
 .body-publicidad1 {
-  background-color: rgb(29, 29, 29);
+  background-color: var(--color-cards);
   color: var(--color-textos);
   padding-left: 40px !important;
 }
@@ -346,7 +349,7 @@ h4 {
 
 /* PUBLICIDAD 2 */
 .publicidad2 {
-  background-color: #0f0f0f;
+  background-color: var(--color-cards);
   color: var(--color-textos);
   font-family: var(--fuente-primary);
   padding-left: 90px;
@@ -420,6 +423,50 @@ h4 {
 .boton-publicidad2:hover {
   background-color: #815e0c97 !important;
   color: #ffffff;
+}
+
+/* login */
+.fondo-login {
+  background-color: var(--color-cards-transparente);
+}
+
+.card-formulario {
+  background-color: var(--color-cards);
+  color: var(--color-textos);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.img-modal-login {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+span {
+  color: var(--color-subtitulos);
+}
+
+.input-login {
+  background-color: var(--color-cards) !important;
+  color: var(--color-textos) !important;
+}
+
+.boton-ingresar-modal {
+  color: var(--color-textos) !important;
+  border: var(--color-subtitulos) solid 1px !important;
+  background-color: transparent;
+}
+
+.boton-ingresar-modal:hover {
+  filter: brightness(60%);
+}
+
+.boton-redes {
+  color: var(--color-subtitulos) !important;
+  border: var(--color-subtitulos) solid 1px !important;
 }
 
 @media (max-width: 575.98px) {
@@ -561,7 +608,6 @@ h4 {
   .card-oferta .numero {
     line-height: 0.9 !important;
   }
-
 }
 
 @media (min-width: 576px) and (max-width: 1199.98px) {
@@ -790,7 +836,7 @@ footer {
 }
 
 .form-contacto h2 {
-  color: var( --color-titulo);
+  color: var(--color-titulo);
   margin-bottom: 0.5rem;
 }
 
@@ -836,6 +882,7 @@ footer {
 .form-contacto button:hover {
   background: var(--color-titulo);
 }
+
 .maps {
   max-width: 500px;
   margin: 2rem auto;
@@ -844,10 +891,12 @@ footer {
   border-radius: 8px;
   font-family: sans-serif;
 }
+
 /* Nosotros */
 .nosotros {
   color: var(--color-titulo);
 }
+
 .parrafo {
   color: var(--color-textos);
 }
@@ -858,7 +907,7 @@ footer {
   height: 100%;
   object-fit: cover;
 }
-}
+
 
 
 /* media queris navbar */
@@ -917,69 +966,74 @@ footer {
   }
 }
  */
- /* css carrito */
-.carrito{ 
-   background-color: var(--color-background)
+/* css carrito */
+.carrito {
+  background-color: var(--color-background)
 }
-.tit-carrito{
+
+.tit-carrito {
   display: flex;
- justify-content: baseline;
+  justify-content: baseline;
   align-items: center;
-height: 50vh;
-background-image: url(../assets/img/imgcarrtio/pexels-svjae-4069858.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
+  height: 50vh;
+  background-image: url(../assets/img/imgcarrtio/pexels-svjae-4069858.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
 }
 
-.tcard-carrito{
-display: flex;
+.tcard-carrito {
+  display: flex;
   justify-content: center;
   align-items: center;
-height: 40vh;
- 
+  height: 40vh;
+
 
 }
-.tcard-carrito0{
-  color:var(--color-textos);
+
+.tcard-carrito0 {
+  color: var(--color-textos);
   font-family: var(--fuente-primary);
   text-decoration: underline;
-  text-decoration-color:  #815e0c;
+  text-decoration-color: #815e0c;
   text-decoration-thickness: 5px;
 }
 
-.let-carrito{
+.let-carrito {
   color: var(--color-textos);
   font-family: var(--fuente-primary);
- 
+
 }
-.let-carrito1{
+
+.let-carrito1 {
   color: var(--color-subtitulos);
   font-family: var(--fuente-secundary);
 }
-.card-carrito{
+
+.card-carrito {
   display: flex;
-  
+
   gap: 100px;
   border-bottom: 1px;
- margin-left: 150px;
- width: 400px;
+  margin-left: 150px;
+  width: 400px;
 }
-.carrito-hijo{
+
+.carrito-hijo {
   width: 00px;
   height: 200px,
-  
+
 }
+
 /* lista derecha "resumen del pedido" */
-.lista-carrito{
+.lista-carrito {
   display: contents;
-  
- 
+
+
 }
-.list-carrito{
+
+.list-carrito {
   display: flex;
   gap: 90px;
 }
-/* css carrito */
- */
