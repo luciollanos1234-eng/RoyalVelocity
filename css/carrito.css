@@ -96,3 +96,256 @@ footer {
   width: 200px;
 }
 
+.contenedor-carrito {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--color-cards);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+h1 {
+    text-align: center;
+    color: #ff3333;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+/* Contenedor para tabla en pantallas chicas */
+.tabla-wrapper {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+.tabla-carrito th,
+.tabla-carrito td {
+    padding: 1rem 0.8rem;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    vertical-align: middle;
+}
+
+.tabla-carrito th {
+    background-color: #2a2a2a;
+    font-weight: 600;
+    color: #ff4d4d;
+}
+
+.tabla-carrito tr:hover {
+    background-color: #252525;
+}
+
+.img-auto {
+    width: 120px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #444;
+    transition: transform 0.2s ease;
+}
+
+.img-auto:hover {
+    transform: scale(1.05);
+}
+
+/* Botones */
+.btn-eliminar {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.btn-eliminar:hover {
+    background-color: #b91c1c;
+}
+
+.seccion-total {
+    text-align: right;
+    padding-top: 1.5rem;
+    border-top: 2px solid #333;
+}
+
+.total-a-pagar {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.total-a-pagar strong {
+    color: #ff3333;
+    font-size: 1.7rem;
+}
+
+.grupo-botones {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.btn-comprar {
+    background-color: #16a34a;
+    color: white;
+    padding: 0.9rem 1.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #15803d;
+}
+
+.btn-volver {
+    background-color: #4b5563;
+    color: white;
+    border: none;
+    padding: 0.9rem 1.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-volver:hover {
+    background-color: #374151;
+}
+
+/* media queris navbar */
+/* Móviles: hasta 767px */
+@media (max-width: 767px) {
+  .icon-nav {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 2px;
+    display: flex;
+    justify-content: start;
+  }
+
+  .media {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pages {
+    font-size: xx-large;
+  }
+}
+
+/* Tabletas: 768px a 991px */
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .icon-nav {
+   
+  }
+} */
+/* media queris footer */
+/* Móviles: hasta 767px */
+@media (max-width: 767px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: small;
+
+  }
+
+  .pages2 {
+    font-size: small;
+  }
+
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Tabletas: 768px a 991px */
+/* @media (min-width: 768px) and (max-width: 991px) {
+  footer {
+
+  }
+}
+ */
+/* ------------------------------ */
+/* MEDIA QUERIES - Diseño Responsivo */
+/* ------------------------------ */
+@media (max-width: 767px) {
+    .contenedor-carrito {
+        padding: 1rem;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .tabla-carrito {
+        min-width: 600px;
+    }
+
+    .img-auto {
+        width: 90px;
+        height: 55px;
+    }
+
+    .total-a-pagar {
+        font-size: 1.3rem;
+    }
+
+    .grupo-botones {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px)  {
+    .contenedor-carrito {
+        padding: 1rem;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .img-auto {
+        width: 70px;
+        height: 45px;
+    }
+
+    .tabla-carrito th,
+    .tabla-carrito td {
+        padding: 0.7rem 0.4rem;
+        font-size: 0.85rem;
+    }
+
+    .total-a-pagar {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .grupo-botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-comprar, .btn-volver {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
+    }
+}
