@@ -849,7 +849,7 @@ footer {
 
 /* CONTACTO */
 .Contacto {
-  color: var(--color-subtitulos);
+  color: var(--color-iconos);
 }
 
 .form-contacto {
@@ -863,7 +863,7 @@ footer {
 }
 
 .form-contacto h2 {
-  color: var(--color-titulo);
+  color: var(--color-iconos);
   margin-bottom: 0.5rem;
 }
 
@@ -897,7 +897,7 @@ footer {
 .form-contacto button {
   width: 100%;
   padding: 0.8rem;
-  background: var(--color-titulo);
+  background: var(--boton-transparente);
   color: var(--color-textos);
   border: none;
   border-radius: 4px;
@@ -907,7 +907,7 @@ footer {
 }
 
 .form-contacto button:hover {
-  background: var(--color-titulo);
+  background: var(--color-botones);
 }
 
 .maps {
