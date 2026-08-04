@@ -96,6 +96,9 @@ footer {
   width: 200px;
 }
 
+.bg {
+    background-color: var(--color-background);
+}
 .contenedor-carrito {
     max-width: 1200px;
     margin: 0 auto;
@@ -107,12 +110,11 @@ footer {
 
 h1 {
     text-align: center;
-    color: #ff3333;
+    color: var(--color-textos);
     margin-bottom: 2rem;
     font-size: 1.8rem;
 }
 
-/* Contenedor para tabla en pantallas chicas */
 .tabla-wrapper {
     overflow-x: auto;
     margin-bottom: 2rem;

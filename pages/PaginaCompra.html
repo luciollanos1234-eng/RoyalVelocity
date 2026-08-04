@@ -15,7 +15,7 @@
   <title>RoyalVelocity</title>
 </head>
 
-<body>
+<body class="bg">
   <header>
     <nav class="navbar navbar-expand navbar-dark" aria-label="Second navbar example" _mstaria-label="416962">
       <div class="container-fluid">
@@ -51,60 +51,63 @@
     </nav>
   </header>
   <main>
-     <div class="contenedor-carrito">
-        <h1>Tu Carrito - Autos Deportivos</h1>
+    <div class="contenedor-carrito">
+      <h1>Tu Carrito - Autos Deportivos</h1>
 
-        <!-- Tabla responsiva -->
-        <div class="tabla-wrapper">
-            <table class="tabla-carrito">
-                <thead>
-                    <tr>
-                        <th>Imagen</th>
-                        <th>Modelo</th>
-                        <th>Precio Unitario</th>
-                        <th>Cantidad</th>
-                        <th>Subtotal</th>
-                        <th>Acción</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=200&h=120&fit=crop" alt="Ferrari 488 GTB" class="img-auto"></td>
-                        <td>Ferrari 488 GTB</td>
-                        <td>$ 380.000.000</td>
-                        <td>1</td>
-                        <td>$ 380.000.000</td>
-                        <td><button class="btn-eliminar">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=200&h=120&fit=crop" alt="Lamborghini Huracán" class="img-auto"></td>
-                        <td>Lamborghini Huracán</td>
-                        <td>$ 420.000.000</td>
-                        <td>1</td>
-                        <td>$ 420.000.000</td>
-                        <td><button class="btn-eliminar">Eliminar</button></td>
-                    </tr>
-                    <tr>
-                        <td><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=200&h=120&fit=crop" alt="Porsche 911 Turbo S" class="img-auto"></td>
-                        <td>Porsche 911 Turbo S</td>
-                        <td>$ 290.000.000</td>
-                        <td>1</td>
-                        <td>$ 290.000.000</td>
-                        <td><button class="btn-eliminar">Eliminar</button></td>
-                    </tr>
-                </tbody>
-            </table>
+      <!-- Tabla responsiva -->
+      <div class="tabla-wrapper">
+        <table class="tabla-carrito">
+          <thead>
+            <tr>
+              <th>Imagen</th>
+              <th>Modelo</th>
+              <th>Precio Unitario</th>
+              <th>Cantidad</th>
+              <th>Subtotal</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=200&h=120&fit=crop"
+                  alt="Ferrari 488 GTB" class="img-auto"></td>
+              <td>Ferrari 488 GTB</td>
+              <td>$ 380.000.000</td>
+              <td>1</td>
+              <td>$ 380.000.000</td>
+              <td><button class="btn-eliminar">Eliminar</button></td>
+            </tr>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=200&h=120&fit=crop"
+                  alt="Lamborghini Huracán" class="img-auto"></td>
+              <td>Lamborghini Huracán</td>
+              <td>$ 420.000.000</td>
+              <td>1</td>
+              <td>$ 420.000.000</td>
+              <td><button class="btn-eliminar">Eliminar</button></td>
+            </tr>
+            <tr>
+              <td><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=200&h=120&fit=crop"
+                  alt="Porsche 911 Turbo S" class="img-auto"></td>
+              <td>Porsche 911 Turbo S</td>
+              <td>$ 290.000.000</td>
+              <td>1</td>
+              <td>$ 290.000.000</td>
+              <td><button class="btn-eliminar">Eliminar</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Total y botones -->
+      <div class="seccion-total">
+        <p class="total-a-pagar">Total a pagar: <strong>$ 1.090.000.000</strong></p>
+
+        <div class="grupo-botones">
+          <a href="error404.html" class="btn-comprar">Proceder con la compra</a>
+          <button class="btn-volver" onclick="history.back()">Volver y seguir comprando</button>
         </div>
-
-        <!-- Total y botones -->
-        <div class="seccion-total">
-            <p class="total-a-pagar">Total a pagar: <strong>$ 1.090.000.000</strong></p>
-
-            <div class="grupo-botones">
-                <a href="error404.html" class="btn-comprar">Proceder con la compra</a>
-                <button class="btn-volver" onclick="history.back()">Volver y seguir comprando</button>
-            </div>
-        </div>
+      </div>
     </div>
   </main>
   <footer>
