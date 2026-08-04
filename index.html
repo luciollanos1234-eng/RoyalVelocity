@@ -1,20 +1,629 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Venta de autos deportivos" />
-    <meta name="keywords" content="autos deportivos, precios de (marca de auto),RoyalVelocity" />
-    <meta name="author" content="rosario ojeda, lucio llanos" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./assets/img/LogoEmpresa.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>RoyalVelocity</title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Venta de autos deportivos" />
+  <meta name="keywords" content="autos deportivos, precios de (marca de auto),RoyalVelocity" />
+  <meta name="author" content="rosario ojeda, lucio llanos" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./assets/img/LogoEmpresa.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <title>RoyalVelocity</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand navbar-dark" aria-label="Second navbar" _mstaria-label="416962">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse media" id="navbars02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active m-1" aria-current="page" href="./index.html"><img class="icon-nav"
+                  src="./assets/img/LogoEmpresa.png" alt="Logo Empresa" /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="./pages/Contacto.html"><i
+                  class="bi bi-phone pages"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="./pages/Nosotros.html"><i
+                  class="bi bi-people pages"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="./pages/Login.html"
+                data-bs-toggle="modal" data-bs-target="#Login"><i class="bi bi-box-arrow-in-right pages"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-2 mt-3" aria-current="page" href="./pages/PaginaCompra.html"><i
+                  class="bi bi-cart pages"></i></a>
+            </li>
+          </ul>
+          <form role="search" class="Buscar">
+            <input class="form-control" type="search" placeholder="Buscar" aria-label="Search" _mstplaceholder="74607"
+              _mstaria-label="74607" />
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero d-flex flex-column gap-5">
+      <div class="capa-oscura"></div>
+      <div class="hero-titulo">
+        <h1>DOMINA LA CARRETERA</h1>
+        <p>Encontra tu auto deportivo alta gama</p>
+      </div>
+      <div class="hero-filtros d-flex flex-wrap gap-3">
+        <div class="boton-filtro">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle boton-transparente" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Seleccioná una marca
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Ferrari</a></li>
+              <li><a class="dropdown-item" href="#">Porsche</a></li>
+              <li><a class="dropdown-item" href="#">Lamborghini</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="boton-filtro">
+          <div class="dropdown">
+            <button class="btn dropdown-toggle boton-transparente" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Seleccioná un modelo
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">911 Carrera</a></li>
+              <li><a class="dropdown-item" href="#">Huracán</a></li>
+              <li><a class="dropdown-item" href="#">488 GTB</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="boton-filtro">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle boton-transparente" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Seleccioná el año
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">2026</a></li>
+              <li><a class="dropdown-item" href="#">2025</a></li>
+              <li>
+                <a class="dropdown-item" href="#">2024</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="boton-filtro">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle boton-transparente" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Rango de precio
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Hasta 50k USD</a></li>
+              <li><a class="dropdown-item" href="#">50k - 100k USD</a></li>
+              <li>
+                <a class="dropdown-item" href="#">100K - 250K USD</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="boton-filtro">
+          <a href="./pages/detalleCategoria.html">
+            <button type="button" class="btn  boton-buscar">Buscar</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="slide-promos">
+      <h4>PROMOCIONES EXCLUSIVAS</h4>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center px-5 g-3">
+              <div class="col-12 col-md-4">
+                <div class="carousel1">
+                  <img src="./assets/img/ferrariDestacados.png" class="imgcarousel" alt="imagen auto ferrari 269 GTB" />
+                  <div class="letracarousel d-flex flex-column justify-content-between gap-5">
+                    <h5>FERRARI 269 GTB</h5>
+                    <div>
+                      <p class="card-text-1">10% OFF</p>
+                      <p class="card-text-2">Entrega inmediata</p>
+                    </div>
+                    <a href="./pages/Error404.html">
+                      <button type="button" class="boton-promo w-100" data-bs-toggle="modal" data-bs-target="#loginModal">VER
+                        PROMOCION</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="carousel1">
+                  <img src="./assets/img/911carrera.jpg" class="imgcarousel" alt="imagen auto porsche" />
+                  <div class="letracarousel d-flex flex-column justify-content-between gap-5">
+                    <h5>PORSCHE 911 CARRERA</h5>
+                    <div>
+                      <p class="card-text-1">Finanaciación exclusiva</p>
+                      <p class="card-text-2">Hasta 60 cuotas</p>
+                    </div>
+                    <a href="./pages/Error404.html">
+                      <button type="button" class="boton-promo w-100">VER PROMOCION</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="carousel1">
+                  <img src="./assets/img/lamborghini.jpg" class="imgcarousel" alt="imagen auto lamborghini" />
+                  <div class="letracarousel d-flex flex-column justify-content-between gap-5">
+                    <h5>LAMBORGHINI HURACAN</h5>
+                    <div>
+                      <p class="card-text-1">Edición limitada</p>
+                      <p class="card-text-2">Unidades seleccionadas</p>
+                    </div>
+                    <a href="./pages/Error404.html">
+                      <button type="button" class="boton-promo w-100">VER PROMOCION</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center px-5 g-3">
+              <div class="col-12 col-md-4">
+                <div class="carousel1">
+                  <img src="./assets/img/taycan.jpg" class="imgcarousel" alt="imagen auto taycan" />
+                  <div class="letracarousel d-flex flex-column justify-content-between gap-5">
+                    <h5>Taycan Turbo S</h5>
+                    <div>
+                      <p class="card-text-1">Carga Gratuita por 3 Años</p>
+                      <p class="card-text-2"> Cargador residencial de regalo.</p>
+                    </div>
+                    <a href="./pages/Error404.html">
+                      <button type="button" class="boton-promo w-100">VER PROMOCION</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="carousel1">
+                  <img src="./assets/img/bmw.webp" class="imgcarousel" alt="imagen auto BMW M4 COMPETITION" />
+                  <div class="letracarousel d-flex flex-column justify-content-between gap-5">
+                    <h5>BMW M4 COMPETITION</h5>
+                    <div>
+                      <p class="card-text-1">Tasa 0% de Lanzamiento</p>
+                      <p class="card-text-2">Financiación directa en unidades seleccionadas.</p>
+                    </div>
+                    <a href="./pages/Error404.html">
+                      <button type="button" class="boton-promo w-100">VER PROMOCION</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="carousel1">
+                  <img src="./assets/img/mustang.jpg" class="imgcarousel" alt="imagen auto FORD MUSTANG GT" />
+                  <div class="letracarousel d-flex flex-column justify-content-between gap-5">
+                    <h5>FORD MUSTANG GT</h5>
+                    <div>
+                      <p class="card-text-1">Performance Bonificado</p>
+                      <p class="card-text-2">Escape de válvulas activas y frenos Brembo®
+                        gratis.</p>
+                    </div>
+                    <a href="./pages/Error404.html">
+                      <button type="button" class="boton-promo w-100">VER PROMOCION</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="destacados container-fluid">
+      <h4>COLECCIÓN DESTACADA</h4>
+      <div class="row justify-content-center px-5 g-2">
+        <div class="col-12 col-md-3">
+          <div class="card-destacados">
+            <img src="./assets/img/ferrariDestacados.png" class="card-img-top card-img-destacados"
+              alt="img auto ferrari 269 GT">
+            <div class="card-body p-0">
+              <div class="card-titulo">
+                <p>Ferrari 269 GT</p>
+              </div>
+              <div class="card-iconos w-100 d-none d-lg-flex justify-content-between">
+                <p class="card-text"><img class="img-iconos" src="./assets/img/iconoAuto.png" alt="icono auto">830 CV
+                </p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoMotor.png" alt="icono motor">V6
+                  HIBRIDO</p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoSpeedometer.png"
+                    alt="icono velocimetro">330 km/h</p>
+              </div>
+              <div class="card-precio">
+                <p class="card-text">Desde USD 420.000</p>
+              </div>
+              <div class="d-flex justify-content-between gap-1">
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card-destacados">
+            <img src="./assets/img/mclaren.png" class="card-img-top card-img-destacados" alt="img auto mclaren">
+            <div class="card-body p-0">
+              <div class="card-titulo">
+                <p>Mclaren</p>
+              </div>
+              <div class="card-iconos w-100 d-none d-lg-flex justify-content-between">
+                <p class="card-text"><img class="img-iconos" src="./assets/img/iconoAuto.png" alt="icono auto">720 CV
+                </p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoMotor.png" alt="icono motor">V8
+                  Twin-Turbo</p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoSpeedometer.png"
+                    alt="icono velocimetro">341 km/h</p>
+              </div>
+              <div class="card-precio">
+                <p class="card-text">Desde USD 389.000</p>
+              </div>
+              <div class="d-flex justify-content-between gap-1">
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card-destacados">
+            <img src="./assets/img/porcheDestacados.png" class="card-img-top card-img-destacados"
+              alt="img auto porche911">
+            <div class="card-body p-0">
+              <div class="card-titulo">
+                <p>Porsche 911 Turbo S</p>
+              </div>
+              <div class="card-iconos w-100 d-none d-lg-flex justify-content-between">
+                <p class="card-text"><img class="img-iconos" src="./assets/img/iconoAuto.png" alt="icono auto">650 CV
+                </p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoMotor.png" alt="icono motor">bover
+                  6</p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoSpeedometer.png"
+                    alt="icono velocimetro">330 km/h</p>
+              </div>
+              <div class="card-precio">
+                <p class="card-text">Desde USD 325.700</p>
+              </div>
+              <div class="d-flex justify-content-between gap-1">
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card-destacados">
+            <img src="./assets/img/LamborghiniDestacados.png" class="card-img-top card-img-destacados"
+              alt="img auto Lamborghini Huracán">
+            <div class="card-body p-0">
+              <div class="card-titulo">
+                <p>Lamborghini Huracán</p>
+              </div>
+              <div class="card-iconos w-100 d-none d-lg-flex justify-content-between">
+                <p class="card-text"><img class="img-iconos" src="./assets/img/iconoAuto.png" alt="icono auto">640 CV
+                </p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoMotor.png" alt="icono motor">V10
+                </p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoSpeedometer.png"
+                    alt="icono velocimetro">330 km/h</p>
+              </div>
+              <div class="card-precio">
+                <p class="card-text">Desde USD 338.000</p>
+              </div>
+              <div class="d-flex justify-content-between gap-1">
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras" class="carrito"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="publicidad1 container-fluid d-none d-md-block">
+      <div class="row">
+        <div class="col-md-5 p-0">
+          <img src="./assets/img/Publicidad1.jpg" class="img-publicidad1" alt="imagen acortada revision tecnica">
+        </div>
+        <div class="body-publicidad1 col-md-7 d-flex flex-column justify-content-center">
+          <div class="titulo-publicidad1">
+            <h5>EXPERIENCIA ROYAL VELOCITY</h5>
+            <p class="card-text">Cada vehículo es inspeccionado por especialistas y entregado con certificación de
+              calidad.</p>
+          </div>
+          <div class="subtitulos-publicidad1">
+            <div class="row">
+              <div class="col-12 col-md-4 d-flex align-items-center gap-2">
+                <img src="./assets/img/iconoAuto.png" alt="icono auto">
+                <p class="mb-0">Calidad Certificada</p>
+              </div>
+              <div class="col-12 col-md-4 d-flex align-items-center gap-2">
+                <img src="./assets/img/iconoMotor.png" alt="icono motor">
+                <p class="mb-0">Atención personalizada</p>
+              </div>
+              <div class="col-12 col-md-4 d-flex align-items-center gap-2">
+                <img src="./assets/img/iconoSpeedometer.png" alt="icono velocimetro">
+                <p class="mb-0">Servicio postventa premium</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="destacados container-fluid">
+      <h4>NUEVOS INGRESOS</h4>
+      <div class="row justify-content-center px-5 g-3">
+        <div class="col-12 col-md-3">
+          <div class="card-destacados">
+            <img src="./assets/img/AstonMartin.png" class="card-img-top card-nuevo" alt="img aston Martin Vintage">
+            <div class="card-body p-0">
+              <div class="card-titulo">
+                <p>Aston Martin Vintage</p>
+              </div>
+              <div class="card-iconos w-100 d-none d-lg-flex justify-content-between ">
+                <p class="card-text"><img class="img-iconos" src="./assets/img/iconoAuto.png" alt="icono auto">510 CV
+                </p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoMotor.png" alt="icono motor">V8
+                  Twin-Turbo</p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoSpeedometer.png"
+                    alt="icono velocimetro">314 km/h</p>
+              </div>
+              <div class="card-precio">
+                <p class="card-text">Desde USD 215.000</p>
+              </div>
+              <div class="d-flex justify-content-between gap-1">
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card-destacados">
+            <img src="./assets/img/mercedesAMG.png" class="card-img-top card-nuevo" alt="img auto mercedes-AMG GT">
+            <div class="card-body p-0">
+              <div class="card-titulo">
+                <p>Mercedes-AMG GT R</p>
+              </div>
+              <div class="card-iconos w-100 d-none d-lg-flex justify-content-between">
+                <p class="card-text"><img class="img-iconos" src="./assets/img/iconoAuto.png" alt="icono auto">585 CV
+                </p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoMotor.png" alt="icono motor">V8
+                  Biturbo</p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoSpeedometer.png"
+                    alt="icono velocimetro">318 km/h</p>
+              </div>
+              <div class="card-precio">
+                <p class="card-text">Desde USD 176.500</p>
+              </div>
+              <div class="d-flex justify-content-between gap-1">
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card-destacados">
+            <img src="./assets/img/audi.png" class="card-img-top card-audi" alt="img auto ferrari 269 GT">
+            <div class="card-body p-0">
+              <div class="card-titulo">
+                <p>Audi RB V10 Performance</p>
+              </div>
+              <div class="card-iconos w-100 d-none d-lg-flex justify-content-between">
+                <p class="card-text"><img class="img-iconos" src="./assets/img/iconoAuto.png" alt="icono auto">620 CV
+                </p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoMotor.png" alt="icono motor">V10
+                  HIBRIDO</p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoSpeedometer.png"
+                    alt="icono velocimetro">331 km/h</p>
+              </div>
+              <div class="card-precio">
+                <p class="card-text">Desde USD 200.000</p>
+              </div>
+              <div class="d-flex justify-content-between gap-1">
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card-destacados">
+            <img src="./assets/img/BMW.png" class="card-img-top card-nuevo" alt="img auto BMW M4 COMPETITION">
+            <div class="card-body p-0">
+              <div class="card-titulo">
+                <p>BMW M4 Competition</p>
+              </div>
+              <div class="card-iconos w-100 d-none d-lg-flex justify-content-between">
+                <p class="card-text"><img class="img-iconos" src="./assets/img/iconoAuto.png" alt="icono auto">510 CV
+                </p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoMotor.png" alt="icono motor">6
+                  Cilindros</p>
+                <p class="card-text"> <img class="img-iconos" src="./assets/img/iconoSpeedometer.png"
+                    alt="icono velocimetro">290 km/h</p>
+              </div>
+              <div class="card-precio">
+                <p class="card-text">Desde USD 120.000</p>
+              </div>
+              <div class="d-flex justify-content-between gap-1">
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras" class="carrito"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="publicidad2 d-flex">
+      <div class="card-img1">
+        <img src="./assets/img/iconoBanco.png" class="icono-publicidad2" alt="icono banco">
+      </div>
+      <div class="card-publicidad2">
+        <div>
+          <h5 class="titulo-card">FINANCIACIÓN PERSONALIZADA</h5>
+          <p class="subtitulo-card">Planes a medida para clientes exclusivos.</p>
+        </div>
+        <button type="button" class="boton-publicidad2">CONSULTAR OPCIONES</button>
+      </div>
+      <div class="card-oferta">
+        <p class="subtitulo-card">Hasta</p>
+        <p class="numero">60</p>
+        <p class="titulo-card">CUOTAS</p>
+      </div>
+      <div class="card-img-publicidad2">
+        <img src="./assets/img/audiPublicidad2.png" class="img-publicidad2" alt="imagen auto audio sin fondo">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="col mb-3">
+      <a href="./index.html"><img class="logo" src="./assets/img/LogoEmpresa.png" alt="logo"></a>
+    </div>
+    <div class="col mb-3">
+      <ul class="nav flex-column">
+        <li class="nav-item mb-3">
+          <a href="./pages/Error404.html" class="nav-link p-0 text-light"><i class="bi bi-instagram pages2"></i>
+            instagram</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="./pages/Error404.html" class="nav-link p-0 text-light"><i class="bi bi-facebook pages2"></i>
+            facebook</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="./pages/Error404.html" class="nav-link p-0 text-light"><i class="bi bi-whatsapp pages2"></i>
+            whatsapp</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a href="./pages/Nosotros.html" class="nav-link p-0 text-light"><i class="bi bi-people pages2">
+            </i>Nosotros</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col mb-3">
+      <ul class="nav flex-column">
+        <li class="nav-item mb-3">
+          <a href="./index.html" class="nav-link p-0 text-light"><i class="bi bi-house-door pages2"></i> Inicio</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="./pages/Contacto.html" class="nav-link p-0 text-light"><i class="bi bi-phone pages2"></i>
+            Contacto</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="./pages/Login.html" class="nav-link p-0 text-light"><i
+              class="bi bi-box-arrow-in-right pe-2 pages2"></i>Login</a>
+        </li>
+        <li class="nav-item mb-3">
+          <a href="./pages/PaginaCompra.html" class="nav-link p-0 text-light"><i class="bi bi-cart pages2"></i>
+            Carrrito</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <form>
+    <div class="modal fade fondo-login" id="Login" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content contenedor-modal-login bg-transparent"> <!-- CONTENEDOR PADRE -->
+          <div class="row g-0">
+            <div class="col-6">
+              <!-- img-modal-login: Clase personalizada en CSS para darle un tamaño fluido y estético al diseño -->
+              <img src="./assets/img/fotoLogin.png" class="img-modal-login" alt="Concesionaria oficial">
+              <!-- pelicula-negra-modal: Capa oscura translúcida que se encima sobre la foto para mitigar el brillo y dar contraste -->
+              <div class="pelicula-negra-modal"></div>
+            </div>
+            <div class="card-formulario col-6 col-md-6 p-4 d-flex flex-column justify-content-center">
+              <!--   boton cerrar -->
+              <button type="button" class="btn-close btn-close-white boton-cierre-modal" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+              <h5 class="modal-title mt-3 mb-3">INGRESAR AL PERFIL</h5>
+              <!-- campo usuario -->
+              <div class="mb-3">
+                <label class="label-modal p-1">USUARIO O EMAIL</label>
+                <input type="text" class="form-control input-login" minlength="4" maxlength="50"
+                  placeholder="Escribe tu usuario" required>
+              </div>
+              <!--  campo contraseña -->
+              <div class="mb-3">
+                <label class="label-modal p-1">CONTRASEÑA</label>
+                <input type="password" class="form-control input-login" minlength="8" maxlength="20"
+                  placeholder="Escribe tu contraseña" required>
+              </div>
+              <div class="mb-4 text-end">
+                <a href="./pages/Error404.html" class="link-recuperar">¿Olvidaste tu contraseña?</a>
+              </div>
+              <a href="./pages/Error404.html">
+                <button class="btn boton-ingresar-modal w-100 mb-3">INGRESAR</button>
+              </a>
+              <div class="separador-redes mb-3">
+                <span>O continuar con</span>
+              </div>
+              <!-- botones redes sociales -->
+              <div class="d-flex gap-2">
+                <a href="./pages/Error404.html"
+                  class="btn boton-redes w-100 d-flex align-items-center justify-content-center gap-2">
+                  Google
+                </a>
+                <a href="./pages/Error404.html"
+                  class="btn boton-redes w-100 d-flex align-items-center justify-content-center gap-2">
+                  Facebook
+                </a>
+              </div>
+  </form>
+  </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+
+  </div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
