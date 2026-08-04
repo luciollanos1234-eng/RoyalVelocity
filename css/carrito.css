@@ -160,6 +160,7 @@ h1 {
 
 /* Botones */
 .btn-eliminar {
+    text-decoration: none;
     background-color: #dc2626;
     color: white;
     border: none;
