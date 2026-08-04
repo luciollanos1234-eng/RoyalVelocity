@@ -149,7 +149,7 @@ footer {
   }
 }
 .categoria {
-    background: white;
+    background: var(--color-cards);
     border-radius: 10px;
     padding: 25px;
     margin-bottom: 40px;
