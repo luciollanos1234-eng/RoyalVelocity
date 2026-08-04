@@ -178,14 +178,14 @@ footer {
         width: 700px;
     }
  }
-.cabecera-categoria h2 {
-    color: #222;
+.sp {
+    color: var(--color-subtitulos);
     font-size: 28px;
     margin-bottom: 8px;
 }
 
-.cabecera-categoria p {
-    color: #555;
+.dt {
+    color: var(--color-textos);
     font-size: 16px;
 }
 
@@ -215,7 +215,7 @@ footer {
 
 .tarjeta-producto h3 {
     padding: 12px;
-    color: #1a1a1a;
+    color: var(--color-textos);
     font-size: 18px;
 }
 
