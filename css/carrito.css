@@ -108,13 +108,6 @@ footer {
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
-h1 {
-    text-align: center;
-    color: var(--color-textos);
-    margin-bottom: 2rem;
-    font-size: 1.8rem;
-}
-
 .tabla-wrapper {
     overflow-x: auto;
     margin-bottom: 2rem;
@@ -136,13 +129,14 @@ h1 {
 }
 
 .tabla-carrito th {
-    background-color: #2a2a2a;
+    background-color: var(--color-cards);
     font-weight: 600;
-    color: #ff4d4d;
+    color: var(--color-textos);
+    font-size: 1.2rem !important;
 }
 
 .tabla-carrito tr:hover {
-    background-color: #252525;
+    background-color: var(--color-cards);
 }
 
 .img-auto {
@@ -157,23 +151,30 @@ h1 {
 .img-auto:hover {
     transform: scale(1.05);
 }
-
+td {
+    color: var(--color-textos);
+}
 /* Botones */
 .btn-eliminar {
-    text-decoration: none;
-    background-color: #dc2626;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background-color 0.2s ease;
+  color: var(--color-textos) !important;
+  background-color: #5757574b !important;
+  backdrop-filter: blur(2px);
+  border: none !important;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  z-index: 5;
+  pointer-events: auto;
+  text-decoration: none;
 }
 
 .btn-eliminar:hover {
-    background-color: #b91c1c;
-}
+  background-color: var(--color-botones) !important;
+  color: var(--color-textos);
+} 
 
 .seccion-total {
     text-align: right;
@@ -183,12 +184,12 @@ h1 {
 
 .total-a-pagar {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: var(--color-subtitulos);
     margin-bottom: 1.5rem;
 }
 
 .total-a-pagar strong {
-    color: #ff3333;
+    color: var(--color-textos);
     font-size: 1.7rem;
 }
 
@@ -200,7 +201,7 @@ h1 {
 }
 
 .btn-comprar {
-    background-color: #16a34a;
+    background-color: var(--boton-transparente);
     color: white;
     padding: 0.9rem 1.8rem;
     border-radius: 6px;
@@ -210,12 +211,12 @@ h1 {
 }
 
 .btn-comprar:hover {
-    background-color: #15803d;
+    background-color: var(--color-botones);
 }
 
 .btn-volver {
-    background-color: #4b5563;
-    color: white;
+    background-color: var(--boton-transparente);
+    color: var(--color-textos);
     border: none;
     padding: 0.9rem 1.8rem;
     border-radius: 6px;
