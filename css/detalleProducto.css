@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,600;1,600&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-textos: #ffffff;
+    --color-titulo: red;
+    --color-subtitulos: #ebebeb;
+    --color-iconos: #815e0c;
+    --color-botones: #815e0c97;
+    --color-background: #000000;
+    --color-cards: #151515;
+    --boton-transparente: #5757574b;
+    --color-cards-transparente: #020202e3;
+    --fuente-primary: "Titillium Web", sans-serif;
+    --fuente-secundary: "Manrope", sans-serif;
+
+    /* Estilo boton */
+    /*  .boton-promo {
+  color: var(--color-textos) !important;
+  background-color: #5757574b !important;
+  backdrop-filter: blur(2px);
+  border: none !important;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  z-index: 5;
+  pointer-events: auto;
+}
+
+.boton-promo:hover {
+  background-color: #815e0c97 !important;
+  color: #ffffff;
+} */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--color-background);
+}
+
+.bg {
+    background-color: var(--color-background);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* NAVBAR */
+nav {
+    background-color: var(--color-background);
+}
+
+.pages {
+    color: var(--color-iconos);
+}
+
+.icon-nav {
+    width: 90px;
+    height: 90px;
+    color: var(--color-iconos);
+}
+
+.Buscar {
+    margin-right: 10px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    color: var(--color-textos);
+    background-color: var(--color-background);
+    font-size: large;
+}
+
+.pages2 {
+    color: var(--color-iconos);
+    font-size: large;
+}
+
+.redes {
+    color: var(--color-textos);
+}
+
+.logo {
+    width: 200px;
+}
+
+/* CONTACTO */
+.Contacto {
+    color: var(--color-subtitulos);
+}
+
+.form-contacto {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--color-cards);
+    border-radius: 8px;
+    color: var(--color-textos);
+    font-family: sans-serif;
+}
+
+.form-contacto h2 {
+    color: var(--color-titulo);
+    margin-bottom: 0.5rem;
+}
+
+.campo {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.campo label {
+    color: var(--color-textos);
+    font-size: large;
+}
+
+.campo input,
+.campo textarea {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 4px;
+    background: var(--color-cards);
+    color: var(--color-textos);
+    border: 1px solid #444;
+}
+
+.campo textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-contacto button {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--color-titulo);
+    color: var(--color-textos);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.form-contacto button:hover {
+    background: var(--color-titulo);
+}
+
+.maps {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--color-cards);
+    border-radius: 8px;
+    font-family: sans-serif;
+}
+
+/* Nosotros */
+.nosotros {
+    color: var(--color-titulo);
+}
+
+.parrafo {
+    color: var(--color-textos);
+}
+
+/* ERROR404 */
+.error404 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* media queris navbar */
+/* Móviles: hasta 767px */
+@media (max-width: 767px) {
+    .icon-nav {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 2px;
+        display: flex;
+        justify-content: start;
+    }
+
+    .media {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pages {
+        font-size: xx-large;
+    }
+}
+
+/* Tabletas: 768px a 991px */
+/* @media (min-width: 768px) and (max-width: 991px) {
+  .icon-nav {
+   
+  }
+} */
+/* media queris footer */
+/* Móviles: hasta 767px */
+@media (max-width: 767px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: small;
+
+    }
+
+    .pages2 {
+        font-size: small;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* detalleproducto */
+.imgDatosTecnicos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.datos1 {
+    background-color: var(--boton-transparente);
+    color: var(--color-textos);
+    border-radius: 10px;
+    height: 20%;
+}
+
+h6 {
+    font-weight: bold;
+}
+
+.card-text {
+    font-weight: 500;
+}
+
+.boton-promo {
+    color: var(--color-textos) !important;
+    background-color: #5757574b !important;
+    backdrop-filter: blur(2px);
+    border: none !important;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    z-index: 5;
+    pointer-events: auto;
+    position: relative;
+    top: -15px;
+}
+
+.boton-promo:hover {
+    background-color: #815e0c97 !important;
+    color: #ffffff;
+}
+
+.boton-datos {
+    color: var(--color-textos) !important;
+    background-color: #5757574b !important;
+}
+
+.datos2 {
+    background-color: var(--boton-transparente);
+    color: var(--color-textos);
+    border-radius: 10px;
+    height: 80%;
+}
+.card-body{
+    background-color: var(--color-cards);
+}
+.card-title{
+    color: var(--color-textos) !important;
+}
+.text-secondary{
+    color: var(--color-background) !important;
+}

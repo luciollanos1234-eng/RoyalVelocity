@@ -17,13 +17,13 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand navbar-dark" aria-label="Second navbar example" _mstaria-label="416962">
+    <nav class="navbar navbar-expand navbar-dark" aria-label="Second navbar" _mstaria-label="416962">
       <div class="container-fluid">
-        <div class="collapse navbar-collapse media" id="navbarsExample02">
+        <div class="collapse navbar-collapse media" id="navbars02">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link active m-1" aria-current="page" href="./index.html"><img class="icon-nav"
-                  src="./assets/img/LogoEmpresa.png" alt="" /></a>
+                  src="./assets/img/LogoEmpresa.png" alt="Logo Empresa" /></a>
             </li>
             <li class="nav-item">
               <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="./pages/Contacto.html"><i
@@ -34,8 +34,8 @@
                   class="bi bi-people pages"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="./pages/Login.html"><i
-                  class="bi bi-box-arrow-in-right pages"></i></a>
+              <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="./pages/Login.html"
+                data-bs-toggle="modal" data-bs-target="#Login"><i class="bi bi-box-arrow-in-right pages"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link active fs-2 mt-3" aria-current="page" href="./pages/PaginaCompra.html"><i
@@ -116,7 +116,9 @@
           </div>
         </div>
         <div class="boton-filtro">
-          <button type="button" class="btn  boton-buscar">Buscar</button>
+          <a href="./pages/detalleCategoria.html">
+            <button type="button" class="btn  boton-buscar">Buscar</button>
+          </a>
         </div>
       </div>
     </section>
@@ -141,8 +143,10 @@
                       <p class="card-text-1">10% OFF</p>
                       <p class="card-text-2">Entrega inmediata</p>
                     </div>
-                    <button type="button" class="boton-promo" data-bs-toggle="modal" data-bs-target="#loginModal">VER
-                      PROMOCION</button>
+                    <a href="./pages/Error404.html">
+                      <button type="button" class="boton-promo w-100" data-bs-toggle="modal" data-bs-target="#loginModal">VER
+                        PROMOCION</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -155,7 +159,9 @@
                       <p class="card-text-1">Finanaciación exclusiva</p>
                       <p class="card-text-2">Hasta 60 cuotas</p>
                     </div>
-                    <button type="button" class="boton-promo">VER PROMOCION</button>
+                    <a href="./pages/Error404.html">
+                      <button type="button" class="boton-promo w-100">VER PROMOCION</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -168,7 +174,9 @@
                       <p class="card-text-1">Edición limitada</p>
                       <p class="card-text-2">Unidades seleccionadas</p>
                     </div>
-                    <button type="button" class="boton-promo">VER PROMOCION</button>
+                    <a href="./pages/Error404.html">
+                      <button type="button" class="boton-promo w-100">VER PROMOCION</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -185,7 +193,9 @@
                       <p class="card-text-1">Carga Gratuita por 3 Años</p>
                       <p class="card-text-2"> Cargador residencial de regalo.</p>
                     </div>
-                    <button type="button" class="boton-promo">VER PROMOCION</button>
+                    <a href="./pages/Error404.html">
+                      <button type="button" class="boton-promo w-100">VER PROMOCION</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -198,7 +208,9 @@
                       <p class="card-text-1">Tasa 0% de Lanzamiento</p>
                       <p class="card-text-2">Financiación directa en unidades seleccionadas.</p>
                     </div>
-                    <button type="button" class="boton-promo">VER PROMOCION</button>
+                    <a href="./pages/Error404.html">
+                      <button type="button" class="boton-promo w-100">VER PROMOCION</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -212,7 +224,9 @@
                       <p class="card-text-2">Escape de válvulas activas y frenos Brembo®
                         gratis.</p>
                     </div>
-                    <button type="button" class="boton-promo">VER PROMOCION</button>
+                    <a href="./pages/Error404.html">
+                      <button type="button" class="boton-promo w-100">VER PROMOCION</button>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -233,7 +247,7 @@
     </section>
     <section class="destacados container-fluid">
       <h4>COLECCIÓN DESTACADA</h4>
-      <div class="row justify-content-center px-5 g-3">
+      <div class="row justify-content-center px-5 g-2">
         <div class="col-12 col-md-3">
           <div class="card-destacados">
             <img src="./assets/img/ferrariDestacados.png" class="card-img-top card-img-destacados"
@@ -254,9 +268,9 @@
                 <p class="card-text">Desde USD 420.000</p>
               </div>
               <div class="d-flex justify-content-between gap-1">
-                <a href="#" class="btn boton-destacados w-100">VER DETALLE</a>
-                <a href="#" class="btn boton-destacados"><img src="./assets/img/iconoCarrito.png"
-                    alt="icono carrito de carritoCompras"></a>
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras"></a>
               </div>
             </div>
           </div>
@@ -280,9 +294,9 @@
                 <p class="card-text">Desde USD 389.000</p>
               </div>
               <div class="d-flex justify-content-between gap-1">
-                <a href="#" class="btn boton-destacados w-100">VER DETALLE</a>
-                <a href="#" class="btn boton-destacados"><img src="./assets/img/iconoCarrito.png"
-                    alt="icono carrito de carritoCompras"></a>
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras"></a>
               </div>
             </div>
           </div>
@@ -307,9 +321,9 @@
                 <p class="card-text">Desde USD 325.700</p>
               </div>
               <div class="d-flex justify-content-between gap-1">
-                <a href="#" class="btn boton-destacados w-100">VER DETALLE</a>
-                <a href="#" class="btn boton-destacados"><img src="./assets/img/iconoCarrito.png"
-                    alt="icono carrito de carritoCompras"></a>
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras"></a>
               </div>
             </div>
           </div>
@@ -334,9 +348,9 @@
                 <p class="card-text">Desde USD 338.000</p>
               </div>
               <div class="d-flex justify-content-between gap-1">
-                <a href="#" class="btn boton-destacados w-100">VER DETALLE</a>
-                <a href="#" class="btn boton-destacados"><img src="./assets/img/iconoCarrito.png"
-                    alt="icono carrito de carritoCompras" class="carrito"></a>
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras" class="carrito"></a>
               </div>
             </div>
           </div>
@@ -395,9 +409,9 @@
                 <p class="card-text">Desde USD 215.000</p>
               </div>
               <div class="d-flex justify-content-between gap-1">
-                <a href="#" class="btn boton-destacados w-100">VER DETALLE</a>
-                <a href="#" class="btn boton-destacados"><img src="./assets/img/iconoCarrito.png"
-                    alt="icono carrito de carritoCompras"></a>
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras"></a>
               </div>
             </div>
           </div>
@@ -421,9 +435,9 @@
                 <p class="card-text">Desde USD 176.500</p>
               </div>
               <div class="d-flex justify-content-between gap-1">
-                <a href="#" class="btn boton-destacados w-100">VER DETALLE</a>
-                <a href="#" class="btn boton-destacados"><img src="./assets/img/iconoCarrito.png"
-                    alt="icono carrito de carritoCompras"></a>
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras"></a>
               </div>
             </div>
           </div>
@@ -447,9 +461,9 @@
                 <p class="card-text">Desde USD 200.000</p>
               </div>
               <div class="d-flex justify-content-between gap-1">
-                <a href="#" class="btn boton-destacados w-100">VER DETALLE</a>
-                <a href="#" class="btn boton-destacados"><img src="./assets/img/iconoCarrito.png"
-                    alt="icono carrito de carritoCompras"></a>
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras"></a>
               </div>
             </div>
           </div>
@@ -473,9 +487,9 @@
                 <p class="card-text">Desde USD 120.000</p>
               </div>
               <div class="d-flex justify-content-between gap-1">
-                <a href="#" class="btn boton-destacados w-100">VER DETALLE</a>
-                <a href="#" class="btn boton-destacados"><img src="./assets/img/iconoCarrito.png"
-                    alt="icono carrito de carritoCompras" class="carrito"></a>
+                <a href="./pages/detalleproducto.html" class="btn boton-destacados w-100">VER DETALLE</a>
+                <a href="./pages/PaginaCompra.html" class="btn boton-destacados"><img
+                    src="./assets/img/iconoCarrito.png" alt="icono carrito de carritoCompras" class="carrito"></a>
               </div>
             </div>
           </div>
@@ -547,134 +561,62 @@
       </ul>
     </div>
   </footer>
-  <!-- =========================================================================================
-     CONTENEDOR PRINCIPAL DEL MODAL
-     - class="modal fade": Indica que es un elemento oculto que aparecerá con una animación suave (fade in).
-     - id="loginModal": Es el identificador único. El botón del navbar usa este mismo nombre para saber a qué modal activar.
-     - tabindex="-1": Permite que la modal se pueda cerrar correctamente al presionar la tecla 'Escape'.
-     - aria-labelledby y aria-hidden: Atributos de accesibilidad para lectores de pantalla de personas con discapacidad visual.
-     ========================================================================================= -->
-  <div class="modal fade fondo-login" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
-    aria-hidden="true">
-
-    <!-- class="modal-dialog-centered": Clava la ventana flotante en el centro geométrico exacto de la pantalla (vertical y horizontal) -->
-    <div class="modal-dialog modal-dialog-centered">
-
-      <!-- class="modal-content": Es el recuadro físico de la modal (la caja). 
-         - border-0: Le quita los bordes feos por defecto de Bootstrap.
-         - overflow-hidden: Recorta las esquinas de la imagen o fondo para que respeten los bordes redondeados. -->
-      <div class="modal-content contenedor-modal-login bg-transparent"> <!-- CONTENEDOR PADRE -->
-
-        <!-- class="row g-0": Inicia la grilla interna de Bootstrap para dividir la modal en dos columnas. 
-           - g-0 (gutter-0): Elimina los espacios o rellenos laterales entre las dos columnas para que queden pegadas. -->
-        <div class="row g-0">
-
-          <!-- ==========================================================
-             COLUMNA 1: LA IMAGEN DE FONDO (LADO IZQUIERDO)
-             - class="col-md-6": En tablets grandes y computadoras (md en adelante), ocupa la mitad exacta del ancho (6 de 12 columnas).
-             - d-none d-md-block: Oculta la imagen en celulares (d-none) y la muestra recién en pantallas medianas hacia arriba (d-md-block).
-             ========================================================== -->
-          <div class="col-6">
-            <!-- img-modal-login: Clase personalizada en CSS para darle un tamaño fluido y estético al diseño -->
-            <img src="./assets/img/fotoLogin.png" class="img-modal-login" alt="Concesionaria oficial">
-            <!-- pelicula-negra-modal: Capa oscura translúcida que se encima sobre la foto para mitigar el brillo y dar contraste -->
-            <div class="pelicula-negra-modal"></div>
-          </div>
-
-          <!-- ==========================================================
-             COLUMNA 2: EL FORMULARIO DE LOGIN (LADO DERECHO)
-             - class="col-md-6": Ocupa la otra mitad en computadoras (6 columnas). En celulares, al estar oculta la foto, esta columna se expande al 100%.
-             - p-4: Aplica un relleno interno amplio a los cuatro lados para que los textos respiren.
-             - d-flex flex-column justify-content-center: Usa Flexbox en vertical para centrar el formulario de arriba a abajo.
-             ========================================================== -->
-          <div class="card-formulario col-6 col-md-6 p-4 d-flex flex-column justify-content-center">
-
-            <!-- BOTÓN DE CERRAR (LA CRUZ BLANCA)
-               - class="btn-close btn-close-white": Clase nativa de Bootstrap que dibuja la cruz de cierre de color blanco.
-               - data-bs-dismiss="modal": El atributo mágico de Bootstrap. Le dice al navegador: "Al hacer clic aquí, cierra esta modal".
-               - posicion-boton-cerrar: Clase en CSS para clavarlo arriba a la derecha de esta columna mediante posición absoluta. -->
-            <button type="button" class="btn-close btn-close-white boton-cierre-modal" data-bs-dismiss="modal"
-              aria-label="Close"></button>
-
-            <!-- TÍTULO DE LA MODAL
-               - id="loginModalLabel": Se conecta con el atributo aria-labelledby del contenedor principal para la accesibilidad.
-               - mb-4: Aplica un margen hacia abajo para separarlo del primer campo de texto. -->
-            <h5 class="modal-title mt-3 mb-3" id="loginModalLabel">INGRESAR AL PERFIL</h5>
-
-            <!-- EL FORMULARIO DE ACCESO
-               - action="404.html": Indica que cuando el usuario complete todo correctamente e intente enviar el formulario,
-                 la página lo redirigirá de manera automática al archivo de error 404 debido a que el backend no está desarrollado. -->
-            <form action="404.html">
-
-              <!-- CAMPO DE USUARIO / EMAIL 
-                 - mb-3: Margen inferior estándar de Bootstrap para separar un campo del otro. -->
+  <form>
+    <div class="modal fade fondo-login" id="Login" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content contenedor-modal-login bg-transparent"> <!-- CONTENEDOR PADRE -->
+          <div class="row g-0">
+            <div class="col-6">
+              <!-- img-modal-login: Clase personalizada en CSS para darle un tamaño fluido y estético al diseño -->
+              <img src="./assets/img/fotoLogin.png" class="img-modal-login" alt="Concesionaria oficial">
+              <!-- pelicula-negra-modal: Capa oscura translúcida que se encima sobre la foto para mitigar el brillo y dar contraste -->
+              <div class="pelicula-negra-modal"></div>
+            </div>
+            <div class="card-formulario col-6 col-md-6 p-4 d-flex flex-column justify-content-center">
+              <!--   boton cerrar -->
+              <button type="button" class="btn-close btn-close-white boton-cierre-modal" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+              <h5 class="modal-title mt-3 mb-3">INGRESAR AL PERFIL</h5>
+              <!-- campo usuario -->
               <div class="mb-3">
-                <!-- label-modal: Clase en tu CSS para pintar la etiqueta del título en color gris elegante -->
                 <label class="label-modal p-1">USUARIO O EMAIL</label>
-                <!-- form-control: Estiliza la caja de texto nativa de Bootstrap.
-                   - minlength y maxlength: Atributos HTML5 que restringen que el texto tenga entre 4 y 50 caracteres obligatoriamente.
-                   - required: Impide que el formulario se envíe si este campo está vacío. -->
                 <input type="text" class="form-control input-login" minlength="4" maxlength="50"
                   placeholder="Escribe tu usuario" required>
               </div>
-
-              <!-- CAMPO DE CONTRASEÑA -->
+              <!--  campo contraseña -->
               <div class="mb-3">
                 <label class="label-modal p-1">CONTRASEÑA</label>
-                <!-- type="password": Oculta los caracteres transformándolos en puntos negros por seguridad.
-                   - minlength y maxlength: Restringen la contraseña estrictamente entre 8 y 20 caracteres. -->
                 <input type="password" class="form-control input-login" minlength="8" maxlength="20"
                   placeholder="Escribe tu contraseña" required>
               </div>
-
-              <!-- LINK DE RECUPERACIÓN DE CONTRASEÑA 
-                 - text-end: Alinea el enlace completamente hacia el extremo derecho de su contenedor. -->
               <div class="mb-4 text-end">
-                <!-- href="404.html": Redirige al error 404 al hacer clic, cumpliendo con la consigna de funcionalidad no desarrollada. -->
-                <a href="404.html" class="link-recuperar">¿Olvidaste tu contraseña?</a>
+                <a href="./pages/Error404.html" class="link-recuperar">¿Olvidaste tu contraseña?</a>
               </div>
-
-              <!-- BOTÓN DE INGRESO PRINCIPAL
-                 - type="submit": Indica que este botón dispara el procesamiento y las validaciones del formulario.
-                 - w-100: Expande el botón para que ocupe todo el ancho horizontal disponible. -->
-              <button type="submit" class="btn boton-ingresar-modal w-100 mb-3">INGRESAR</button>
-
-              <!-- SEPARADOR VISUAL 
-                 - Crea una línea divisoria elegante con el texto "O continuar con" para dar paso al inicio de sesión social. -->
+              <a href="./pages/Error404.html">
+                <button class="btn boton-ingresar-modal w-100 mb-3">INGRESAR</button>
+              </a>
               <div class="separador-redes mb-3">
                 <span>O continuar con</span>
               </div>
-
-              <!-- BOTONES DE INICIO SOCIAL (GOOGLE Y FACEBOOK)
-                 - class="d-flex gap-2": Coloca los dos botones uno al lado del otro con una separación controlada (gap). -->
+              <!-- botones redes sociales -->
               <div class="d-flex gap-2">
-                <!-- Ambos botones apuntan a "404.html" ya que simulan la API de inicio de sesión de terceros -->
-                <a href="404.html" class="btn boton-redes w-100 d-flex align-items-center justify-content-center gap-2">
+                <a href="./pages/Error404.html"
+                  class="btn boton-redes w-100 d-flex align-items-center justify-content-center gap-2">
                   Google
                 </a>
-                <a href="404.html" class="btn boton-redes w-100 d-flex align-items-center justify-content-center gap-2">
+                <a href="./pages/Error404.html"
+                  class="btn boton-redes w-100 d-flex align-items-center justify-content-center gap-2">
                   Facebook
                 </a>
               </div>
-            </form>
-          </div>
-        </div>
-
-        <!-- BOTÓN DEL NAVBAR (COMENTADO DE EJEMPLO)
-           - data-bs-toggle="modal": Le avisa a Bootstrap que este botón tiene la propiedad de abrir un elemento flotante.
-           - data-bs-target="#loginModal": Enlace magnético directo. Al hacer clic, busca el ID de la línea 1 y abre esta modal exacta. -->
-        <!-- <button type="button" class="btn btn-login-navbar" data-bs-toggle="modal" data-bs-target="#loginModal">
-        Iniciar Sesión
-      </button> -->
-
-      </div>
-    </div>
+  </form>
+  </div>
   </div>
 
-  <!-- Botón que va dentro de tu barra de navegación (Navbar) -->
-  <!-- <button type="button" class="btn btn-login-navbar" data-bs-toggle="modal" data-bs-target="#loginModal">
-  Iniciar Sesión
-</button> -->
+  </div>
+  </div>
+  </div>
+
   </div>
   </div>
   </div>
