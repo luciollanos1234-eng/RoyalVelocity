@@ -1,15 +1,16 @@
 /* Estilos generales */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 :root {
   --color-textos: #ffffff;
-  --color-titulo: red;
+  --color-titulo: rgb(126, 9, 9);
   --color-subtitulos: #ebebeb;
-  --color-iconos: #815e0c;
-  --color-botones: #815e0c97;
+  --color-iconos: #999c9c;
+  --color-botones: #5757574b;
   --color-background: #000000;
   --color-cards: #151515;
   --boton-transparente: #5757574b;
@@ -38,6 +39,7 @@
   color: #ffffff;
 } */
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -51,14 +53,51 @@ body {
 
 main {
   flex: 1 0 auto;
+  display: flex;
+  /* Activa Flexbox */
+  flex-direction: column;
+  /* Mantiene la orientación vertical de tus bloques */
+  align-items: center;
+  /* Centra horizontalmente todo el contenido hijo */
+  width: 100%;
 }
+
 /* NAVBAR */
-nav {
-  background-color: var(--color-background);
+.tituloNav {
+  font-size: 1.2rem;
+  color: var(--color-textos);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.botonBuscar {
+  background-color: #2a2a2a60 !important;
+  backdrop-filter: blur(2px);
+  border: none !important;
+  border-radius: 5px;
+  color: rgb(103, 102, 102) !important;
+}
+
+.form-control::placeholder {
+  color: rgb(103, 102, 102) !important;
+  opacity: 1;
+}
+
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #cccccc37 !important;
 }
 
 .pages {
-  color: var(--color-iconos);
+  font-size: 1.3rem;
+}
+
+nav {
+  background-color: var(--color-background);
 }
 
 .icon-nav {
@@ -67,11 +106,358 @@ nav {
   color: var(--color-iconos);
 }
 
-.Buscar {
-  margin-right: 10px;
+.tabla-carrito th,
+.tabla-carrito td {
+  padding: 1rem 0.8rem;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  vertical-align: middle;
 }
 
-/* FOOTER */
+/* Corrección Global para Centrar el Carrito */
+.contenedor-carrito {
+  width: 100%;
+  max-width: 1200px;
+  /* Evita que se estire demasiado en monitores grandes */
+  margin: 2rem auto;
+  /* EL TRUCO: "auto" a los lados centra el bloque horizontalmente */
+  padding: 0 1.5rem;
+  /* Colchón de seguridad para que no toque los bordes */
+  display: flex;
+  flex-direction: column;
+}
+
+.tabla-carrito {
+  width: 100%;
+  overflow-x: auto;
+  /* Permite scroll horizontal si la tabla es más ancha que la pantalla */
+  margin-bottom: 1.5rem;
+}
+
+.tabla-carrito th {
+  background-color: var(--color-cards);
+  font-weight: 600;
+  color: var(--color-textos);
+  font-size: 1.2rem !important;
+}
+
+.tabla-carrito tr:hover {
+  background-color: var(--color-cards);
+}
+
+.img-auto {
+  width: 120px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid #444;
+  transition: transform 0.2s ease;
+}
+
+.img-auto:hover {
+  transform: scale(1.05);
+}
+
+td {
+  color: var(--color-textos);
+}
+
+/* Botones */
+/* ==========================================
+   BOTONES (Copia y reemplaza este bloque)
+   ========================================== */
+
+.btn-eliminar {
+  color: var(--color-textos);
+  background-color: #5757574b;
+  backdrop-filter: blur(2px);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  cursor: pointer;
+  z-index: 5;
+  pointer-events: auto;
+  text-decoration: none;
+  display: inline-block;
+  /* Asegura que el transform (escala) funcione correctamente */
+
+  /* Definimos la animación en el estado base */
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Usamos mayor especificidad (anteponiendo la tabla) para ganarle a cualquier estilo previo sin usar !important */
+.tabla-carrito .btn-eliminar:hover {
+  background-color: #3a3a3a !important;
+  /* Un gris sólido más claro para que se note el cambio */
+  color: #ffffff !important;
+  transform: scale(1.08);
+  /* Crece un 8% al pasar el cursor */
+}
+
+
+.seccion-total {
+  text-align: right;
+  padding-top: 1.5rem;
+  border-top: 2px solid #333;
+}
+
+.total-a-pagar {
+  font-size: 1.5rem;
+  color: var(--color-subtitulos);
+  margin-bottom: 1.5rem;
+}
+
+.total-a-pagar strong {
+  color: var(--color-textos);
+  font-size: 1.7rem;
+}
+
+.grupo-botones {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.btn-comprar {
+  background-color: var(--boton-transparente);
+  color: white;
+  padding: 0.9rem 1.8rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease !important;
+}
+
+.btn-comprar:hover {
+  background-color: var(--color-titulo) !important;
+  transform: scale(1.08);
+}
+
+.btn-volver {
+  background-color: var(--boton-transparente);
+  color: var(--color-textos);
+  border: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn-volver:hover {
+  background-color: #374151;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES - UNIFICADAS Y CORREGIDAS (NAVBAR, CARRITO Y FOOTER)
+   ========================================================================== */
+
+/* 📱 DISPOSITIVOS MÓVILES (Celulares hasta 767px) */
+@media (max-width: 767px) {
+  
+  /* NAVBAR RESPONSIVO */
+  nav {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  
+  .media {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en vertical */
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .icon-nav {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .tituloNav {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .pages {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* CARRITO RESPONSIVO */
+  .contenedor-carrito {
+    margin: 1rem auto;
+    padding: 0 0.8rem;
+    width: 100%;
+  }
+
+  .tabla-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
+    border: 1px solid #333;
+    border-radius: 6px;
+    width: 100%;
+  }
+
+  .tabla-carrito {
+    min-width: 650px; 
+  }
+
+  .tabla-carrito th,
+  .tabla-carrito td {
+    padding: 0.8rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .img-auto {
+    width: 80px;
+    height: 50px;
+  }
+
+  .seccion-total {
+    text-align: center;
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  .total-a-pagar {
+    font-size: 1.3rem;
+  }
+
+  .grupo-botones {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  .btn-comprar,
+  .btn-volver {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+  }
+
+  /* FOOTER RESPONSIVO CORREGIDO */
+  footer {
+    display: flex;
+    flex-direction: column; /* Apila logo, enlaces y redes verticalmente */
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;             /* Separación simétrica entre bloques */
+    padding: 2rem 1rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  footer .logo {
+    width: 80px;  /* Tamaño controlado para que no rompa el diseño */
+    height: 80px;
+  }
+
+  .pages2 {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column; /* Enlaces uno abajo del otro en celular */
+    gap: 0.5rem;
+  }
+}
+
+/* 🎫 TABLETS (Desde 768px hasta 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  nav, footer {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribuye el espacio de forma elegante */
+    align-items: center;
+  }
+
+  .contenedor-carrito {
+    margin: 1.5rem auto;
+    padding: 0 1.2rem;
+    width: 100%;
+  }
+
+  .tabla-carrito th,
+  .tabla-carrito td {
+    padding: 0.9rem 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .img-auto {
+    width: 100px;
+    height: 60px;
+  }
+
+  .grupo-botones {
+    justify-content: flex-end;
+  }
+}
+
+
+.fondo-login {
+  background-color: var(--color-cards-transparente);
+}
+
+.card-formulario {
+  background-color: var(--color-cards);
+  color: var(--color-textos);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+}
+
+.img-modal-login {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+span {
+  color: var(--color-subtitulos);
+}
+
+.input-login {
+  background-color: var(--color-cards) !important;
+  color: var(--color-textos) !important;
+}
+
+.boton-ingresar-modal {
+  color: var(--color-textos) !important;
+  border: var(--color-subtitulos) solid 1px !important;
+  background-color: transparent;
+}
+
+.boton-ingresar-modal:hover {
+  filter: brightness(60%);
+}
+
+.boton-redes {
+  color: var(--color-subtitulos) !important;
+  border: var(--color-subtitulos) solid 1px !important;
+}
+
+.boton-cierre-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -93,263 +479,78 @@ footer {
 }
 
 .logo {
-  width: 200px;
+  width: 50px;
+  height: 50px;
 }
 
-.bg {
-    background-color: var(--color-background);
-}
-.contenedor-carrito {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: var(--color-cards);
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+/* CONTACTO */
+.Contacto {
+  color: var(--color-titulo);
 }
 
-.tabla-wrapper {
-    overflow-x: auto;
-    margin-bottom: 2rem;
-    border-radius: 8px;
-}
-
-.tabla-carrito {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 700px;
-}
-
-.tabla-carrito th,
-.tabla-carrito td {
-    padding: 1rem 0.8rem;
-    text-align: center;
-    border-bottom: 1px solid #333;
-    vertical-align: middle;
-}
-
-.tabla-carrito th {
-    background-color: var(--color-cards);
-    font-weight: 600;
-    color: var(--color-textos);
-    font-size: 1.2rem !important;
-}
-
-.tabla-carrito tr:hover {
-    background-color: var(--color-cards);
-}
-
-.img-auto {
-    width: 120px;
-    height: 70px;
-    object-fit: cover;
-    border-radius: 6px;
-    border: 2px solid #444;
-    transition: transform 0.2s ease;
-}
-
-.img-auto:hover {
-    transform: scale(1.05);
-}
-td {
-    color: var(--color-textos);
-}
-/* Botones */
-.btn-eliminar {
-  color: var(--color-textos) !important;
-  background-color: #5757574b !important;
-  backdrop-filter: blur(2px);
-  border: none !important;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 8px 16px;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  z-index: 5;
-  pointer-events: auto;
-  text-decoration: none;
-}
-
-.btn-eliminar:hover {
-  background-color: var(--color-botones) !important;
+.form-contacto {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--color-cards);
+  border-radius: 8px;
   color: var(--color-textos);
-} 
-
-.seccion-total {
-    text-align: right;
-    padding-top: 1.5rem;
-    border-top: 2px solid #333;
+  font-family: sans-serif;
 }
 
-.total-a-pagar {
-    font-size: 1.5rem;
-    color: var(--color-subtitulos);
-    margin-bottom: 1.5rem;
+.form-contacto h2 {
+  color: var(--color-titulo);
+  margin-bottom: 0.5rem;
 }
 
-.total-a-pagar strong {
-    color: var(--color-textos);
-    font-size: 1.7rem;
+.campo {
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
 }
 
-.grupo-botones {
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+.campo label {
+  color: var(--color-textos);
+  font-size: large;
 }
 
-.btn-comprar {
-    background-color: var(--boton-transparente);
-    color: white;
-    padding: 0.9rem 1.8rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background-color 0.2s ease;
+.campo input,
+.campo textarea {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 4px;
+  background: var(--color-cards);
+  color: var(--color-textos);
+  border: 1px solid #444;
 }
 
-.btn-comprar:hover {
-    background-color: var(--color-botones);
+.campo textarea {
+  min-height: 120px;
+  resize: vertical;
 }
 
-.btn-volver {
-    background-color: var(--boton-transparente);
-    color: var(--color-textos);
-    border: none;
-    padding: 0.9rem 1.8rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background-color 0.2s ease;
+.form-contacto button {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--boton-transparente);
+  color: var(--color-textos);
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
-.btn-volver:hover {
-    background-color: #374151;
+.form-contacto button:hover {
+  background: var(--color-botones);
 }
 
-/* media queris navbar */
-/* Móviles: hasta 767px */
-@media (max-width: 767px) {
-  .icon-nav {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 2px;
-    display: flex;
-    justify-content: start;
-  }
-
-  .media {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-  }
-
-  .pages {
-    font-size: xx-large;
-  }
-}
-
-/* Tabletas: 768px a 991px */
-/* @media (min-width: 768px) and (max-width: 991px) {
-  .icon-nav {
-   
-  }
-} */
-/* media queris footer */
-/* Móviles: hasta 767px */
-@media (max-width: 767px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: small;
-
-  }
-
-  .pages2 {
-    font-size: small;
-  }
-
-  .logo {
-    width: 150px;
-    height: 150px;
-  }
-}
-
-/* Tabletas: 768px a 991px */
-/* @media (min-width: 768px) and (max-width: 991px) {
-  footer {
-
-  }
-}
- */
-/* ------------------------------ */
-/* MEDIA QUERIES - Diseño Responsivo */
-/* ------------------------------ */
-@media (max-width: 767px) {
-    .contenedor-carrito {
-        padding: 1rem;
-        margin: 10px;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    .tabla-carrito {
-        min-width: 600px;
-    }
-
-    .img-auto {
-        width: 90px;
-        height: 55px;
-    }
-
-    .total-a-pagar {
-        font-size: 1.3rem;
-    }
-
-    .grupo-botones {
-        justify-content: center;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px)  {
-    .contenedor-carrito {
-        padding: 1rem;
-        margin: 10px;
-    }
-
-    h1 {
-        font-size: 1.3rem;
-    }
-
-    .img-auto {
-        width: 70px;
-        height: 45px;
-    }
-
-    .tabla-carrito th,
-    .tabla-carrito td {
-        padding: 0.7rem 0.4rem;
-        font-size: 0.85rem;
-    }
-
-    .total-a-pagar {
-        font-size: 1.1rem;
-        text-align: center;
-    }
-
-    .grupo-botones {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .btn-comprar, .btn-volver {
-        width: 100%;
-        max-width: 280px;
-        text-align: center;
-    }
+.maps {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--color-cards);
+  border-radius: 8px;
+  font-family: sans-serif;
 }

@@ -9,10 +9,10 @@
 
 :root {
   --color-textos: #ffffff;
-  --color-titulo: red;
+  --color-titulo: #ff000046;
   --color-subtitulos: #ebebeb;
-  --color-iconos: #815e0c;
-  --color-botones: #815e0c97;
+  --color-iconos: #999c9c;
+  --color-botones: #5757574b;
   --color-background: #000000;
   --color-cards: #151515;
   --boton-transparente: #5757574b;
@@ -78,6 +78,34 @@ h4 {
   padding-bottom: 15px;
 }
 
+.tituloNav {
+  font-size: 1.2rem;
+  color: var(--color-textos);
+}
+
+.botonBuscar{
+  background-color: #2a2a2a60 !important;
+  backdrop-filter: blur(2px);
+  border: none !important;
+  border-radius: 5px;
+  color: rgb(103, 102, 102) !important;
+}
+
+.form-control::placeholder {
+  color: rgb(103, 102, 102) !important;
+  opacity: 1;
+}
+
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #cccccc37 !important;
+}
+
+.pages {
+  font-size: 1.3rem;
+}
+
 .hero {
   background-image: url(../assets/img/Hero1.png);
   background-size: cover;
@@ -96,7 +124,7 @@ h4 {
 .capa-oscura {
   width: 100%;
   height: 100%;
-  background-color: #00000062;
+  background-color: #0000007e;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -136,13 +164,13 @@ h4 {
 }
 
 .dropdown-item:hover {
-  background-color: var(--color-iconos) !important;
+  background-color: var(--color-titulo) !important;
   color: var(--color-textos) !important;
 }
 
 .boton-buscar {
-  color: var(--color-textos) !important;
-  background-color: #815e0c97 !important;
+  color: var(--color-subtitulos) !important;
+  background-color: #4f0606 !important;
   backdrop-filter: blur(2px);
   width: 100%;
 }
@@ -229,7 +257,7 @@ h4 {
 }
 
 .boton-promo:hover {
-  background-color: #815e0c97 !important;
+  background-color: var(--color-titulo) !important;
   color: #ffffff;
 }
 
@@ -251,7 +279,7 @@ h4 {
 }
 
 .boton-destacados:hover {
-  background-color: #815e0c97 !important;
+  background-color:var(--color-titulo) !important;
   color: #ffffff;
 }
 
@@ -421,7 +449,7 @@ h4 {
 }
 
 .boton-publicidad2:hover {
-  background-color: #815e0c97 !important;
+  background-color: var(--color-titulo) !important;
   color: #ffffff;
 }
 
@@ -469,11 +497,13 @@ span {
   color: var(--color-subtitulos) !important;
   border: var(--color-subtitulos) solid 1px !important;
 }
-.boton-cierre-modal{
+
+.boton-cierre-modal {
   position: absolute;
   top: 10px;
   right: 10px;
 }
+
 @media (max-width: 575.98px) {
   .hero {
     background-image: url(../assets/img/Hero1.png);
@@ -530,7 +560,7 @@ span {
   }
 
   .boton-transparente:hover {
-    background-color: var(--color-botones) !important;
+    background-color: var(--color-titulo) !important;
   }
 
   .dropdown-menu {
@@ -613,26 +643,32 @@ span {
   .card-oferta .numero {
     line-height: 0.9 !important;
   }
-  .modal-title{
+
+  .modal-title {
     font-size: 0.9rem !important;
   }
 
-  .label-modal{
+  .label-modal {
     font-size: 0.8rem !important;
   }
-  .input-login{
+
+  .input-login {
     font-size: 0.7rem !important;
   }
-  .link-recuperar{
+
+  .link-recuperar {
     font-size: 0.7rem !important;
   }
-  .boton-ingresar-modal{
+
+  .boton-ingresar-modal {
     font-size: 0.8rem !important;
   }
-  span{
+
+  span {
     font-size: 0.8rem !important;
   }
-  .boton-redes{
+
+  .boton-redes {
     font-size: 0.8rem !important;
   }
 }
@@ -796,7 +832,7 @@ span {
   }
 
   .boton-publicidad2:hover {
-    background-color: #815e0c97 !important;
+    background-color: var(--color-titulo) !important;
     color: #ffffff;
   }
 
@@ -806,6 +842,7 @@ span {
 /* NAVBAR */
 nav {
   background-color: var(--color-background);
+  height: 10vh;
 }
 
 .pages {
@@ -926,9 +963,10 @@ footer {
 
 .parrafo {
   color: var(--color-textos);
-  
+
 }
-.img-nosotros  {
+
+.img-nosotros {
   width: 150px;
   height: 150px;
   object-fit: cover;
@@ -945,24 +983,76 @@ footer {
 
 
 /* media queris navbar */
-/* Móviles: hasta 767px */
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
+  /* Mantiene la altura fija de la barra en móviles */
+  nav {
+    height: 10vh !important;
+    padding: 0 5px !important;
+  }
+
+  /* Fuerza a que el contenedor principal sea una sola fila estricta */
+  .navbar-collapse {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    gap: 8px !important; /* Espacio uniforme entre los bloques */
+  }
+
+  /* Alinea el logo y los iconos en una fila continua sin saltos */
+  .navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 10px !important; /* Espacio entre cada icono de navegación */
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Elimina por completo los márgenes que rompen la fila */
+  .navbar-nav .nav-item,
+  .navbar-nav .nav-link {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Achica el logo para que deje espacio al buscador */
   .icon-nav {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 2px;
-    display: flex;
-    justify-content: start;
+    width: 50px !important;
+    height: 50px !important;
   }
 
-  .media {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
+  /* Ajusta el tamaño de la fuente e iconos para dispositivos móviles */
+  .navbar-nav .nav-link.fs-2 {
+    font-size: 1.2rem !important;
   }
 
-  .pages {
-    font-size: xx-large;
+  .navbar-nav .nav-link i.pages {
+    font-size: 1.3rem !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* IMPORTANTE: Oculta el texto en celulares para que entre todo en la misma línea */
+  .navbar-nav .tituloNav {
+    display: none !important;
+  }
+
+  /* Configura el buscador para que comparta la fila de forma compacta */
+  .Buscar {
+    flex-grow: 1 !important; /* Hace que ocupe el espacio sobrante de la fila */
+    max-width: 140px !important; /* Evita que tape a los iconos */
+    margin: 0 !important;
+  }
+
+  /* Reduce el padding interno del input de búsqueda */
+  .Buscar .form-control {
+    width: 100% !important;
+    padding: 4px 8px !important;
+    font-size: 0.85rem !important;
   }
 }
 
@@ -1000,4 +1090,3 @@ footer {
   }
 }
  */
-

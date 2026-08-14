@@ -23,28 +23,29 @@
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link active m-1" aria-current="page" href="../index.html"><img class="icon-nav"
-                  src="../assets/img/LogoEmpresa.png" alt="" /></a>
+                  src="../assets/img/LogoEmpresa.png" alt="Logo Empresa" /></a>
             </li>
             <li class="nav-item">
               <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="../pages/Contacto.html"><i
-                  class="bi bi-phone pages"></i></a>
+                  class="bi bi-phone pages pe-1"></i><span class="tituloNav">Contacto</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item gap-3">
               <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="../pages/Nosotros.html"><i
-                  class="bi bi-people pages"></i></a>
+                  class="bi bi-people pages pe-1"></i><span class="tituloNav">Nosotros</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="../pages/Login.html"><i
-                  class="bi bi-box-arrow-in-right pages"></i></a>
+              <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="../pages/Login.html"
+                data-bs-toggle="modal" data-bs-target="#Login"><i class="bi bi-box-arrow-in-right pages pe-1"></i><span
+                  class="tituloNav">Ingresar</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link active fs-2 mt-3" aria-current="page" href="../pages/PaginaCompra.html"><i
-                  class="bi bi-cart pages"></i></a>
+                  class="bi bi-cart pages pe-1"></i><span class="tituloNav">Comprar</span></a>
             </li>
           </ul>
           <form role="search" class="Buscar">
-            <input class="form-control" type="search" placeholder="Buscar" aria-label="Search" _mstplaceholder="74607"
-              _mstaria-label="74607" />
+            <input class="form-control botonBuscar" type="search" placeholder="Buscar" aria-label="Search"
+              _mstplaceholder="74607" _mstaria-label="74607" />
           </form>
         </div>
       </div>
@@ -99,14 +100,16 @@
         <p class="total-a-pagar">Total a pagar: <strong>$ 1.090.000.000</strong></p>
         <div class="grupo-botones">
           <a href="../pages/Error404.html" class="btn-comprar">Proceder con la compra</a>
+          <a href="../index.html">
           <button class="btn-volver" onclick="history.back()">Volver y seguir comprando</button>
+          </a>
         </div>
       </div>
     </div>
   </main>
   <footer>
     <div class="col mb-3">
-      <a href="./index.html"><img class="logo" src="../assets/img/LogoEmpresa.png" alt="logo" /></a>
+      <a href="../index.html"><img class="logo" src="../assets/img/LogoEmpresa.png" alt="logo" /></a>
     </div>
     <div class="col mb-3">
       <ul class="nav flex-column">
@@ -148,6 +151,55 @@
       </ul>
     </div>
   </footer>
+  <form>
+    <div class="modal fade fondo-login" id="Login" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content contenedor-modal-login bg-transparent"> <!-- CONTENEDOR PADRE -->
+          <div class="row g-0">
+            <div class="col-6">
+              <!-- img-modal-login: Clase personalizada en CSS para darle un tamaño fluido y estético al diseño -->
+              <img src="../assets/img/fotoLogin.png" class="img-modal-login" alt="Concesionaria oficial">
+              <!-- pelicula-negra-modal: Capa oscura translúcida que se encima sobre la foto para mitigar el brillo y dar contraste -->
+              <div class="pelicula-negra-modal"></div>
+            </div>
+            <div class="card-formulario col-6 col-md-6 p-4 d-flex flex-column justify-content-center">
+              <!--   boton cerrar -->
+              <button type="button" class="btn-close btn-close-white boton-cierre-modal" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+              <h5 class="modal-title mt-3 mb-3">INGRESAR AL PERFIL</h5>
+              <!-- campo usuario -->
+              <div class="mb-3">
+                <label class="label-modal p-1">USUARIO O EMAIL</label>
+                <input type="text" class="form-control input-login" minlength="4" maxlength="50"
+                  placeholder="Escribe tu usuario" required>
+              </div>
+              <!--  campo contraseña -->
+              <div class="mb-3">
+                <label class="label-modal p-1">CONTRASEÑA</label>
+                <input type="password" class="form-control input-login" minlength="8" maxlength="20"
+                  placeholder="Escribe tu contraseña" required>
+              </div>
+              <div class="mb-4 text-end">
+                <a href="../pages/Error404.html" class="link-recuperar">¿Olvidaste tu contraseña?</a>
+              </div>
+              <a href="../pages/Error404.html">
+                <button class="btn boton-ingresar-modal w-100 mb-3">INGRESAR</button>
+              </a>
+              <div class="separador-redes mb-3">
+                <span>O continuar con</span>
+              </div>
+              <!-- botones redes sociales -->
+              <div class="d-flex gap-2">
+                <a href="../pages/Error404.html"
+                  class="btn boton-redes w-100 d-flex align-items-center justify-content-center gap-2">
+                  Google
+                </a>
+                <a href="../pages/Error404.html"
+                  class="btn boton-redes w-100 d-flex align-items-center justify-content-center gap-2">
+                  Facebook
+                </a>
+              </div>
+  </form>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>

@@ -23,28 +23,28 @@
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link active m-1" aria-current="page" href="../index.html"><img class="icon-nav"
-                  src="../assets/img/LogoEmpresa.png" alt="" /></a>
+                  src="../assets/img/LogoEmpresa.png" alt="Logo Empresa" /></a>
             </li>
             <li class="nav-item">
               <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="../pages/Contacto.html"><i
-                  class="bi bi-phone pages"></i></a>
+                  class="bi bi-phone pages pe-1"></i><span class="tituloNav">Contacto</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item gap-3">
               <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="../pages/Nosotros.html"><i
-                  class="bi bi-people pages"></i></a>
+                  class="bi bi-people pages pe-1"></i><span class="tituloNav">Nosotros</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="../pages/Login.html"><i
-                  class="bi bi-box-arrow-in-right pages"></i></a>
+              <a class="nav-link active fs-2 mt-3 me-3" aria-current="page" href="../pages/Login.html"
+                data-bs-toggle="modal" data-bs-target="#Login"><i class="bi bi-box-arrow-in-right pages pe-1"></i><span
+                  class="tituloNav">Ingresar</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link active fs-2 mt-3" aria-current="page" href="../pages/PaginaCompra.html"><i
-                  class="bi bi-cart pages"></i></a>
+                  class="bi bi-cart pages pe-1"></i><span class="tituloNav">Comprar</span></a>
             </li>
           </ul>
           <form role="search" class="Buscar">
-            <input class="form-control" type="search" placeholder="Buscar" aria-label="Search" _mstplaceholder="74607"
-              _mstaria-label="74607" />
+            <input class="form-control botonBuscar" type="search" placeholder="Buscar" aria-label="Search" />
           </form>
         </div>
       </div>
@@ -55,47 +55,55 @@
       <h2 class="nosotros">Nosotros</h2>
       <hr class="parrafo">
       <p class="parrafo">
-        Somos el espacio exclusivo dedicado al mundo de los autos deportivos en Tucumán y toda la región. Nacimos de la
-        pasión por los vehículos que combinan potencia, diseño y emoción, con el objetivo de transformar la forma en que
-        se compran y venden estos modelos únicos: eliminamos dudas, tratos poco claros y complicaciones, para ofrecerte
-        un proceso sencillo, seguro y 100% transparente.</p>
-      <hr class="parrafo">
-      <p class="parrafo">Con un conocimiento profundo del mercado automotriz deportivo, revisamos y validamos cada
-        publicación al
-        detalle: desde su estado mecánico hasta su historial y originalidad, para garantizar que encuentres exactamente
-        lo que buscas o vendas tu vehículo con la certeza de llegar a verdaderos entusiastas. Tanto si buscas un clásico
-        de colección, un modelo de alto rendimiento o una joya moderna, como si quieres darle un nuevo dueño a tu auto
-        deportivo, te acompañamos en cada paso: desde la búsqueda o publicación, hasta el cierre del trato.</p>
-      <hr class="parrafo">
-      <p class="parrafo"> No somos solo una plataforma de compraventa: somos una comunidad de personas que comparten la
-        misma pasión.
-        Nuestro compromiso es con vos: priorizamos el trato honesto, la seguridad de tus datos y la tranquilidad de
-        saber que estás haciendo un negocio entre quienes entienden y valoran estos vehículos como se merecen.</p>
+        "Somos estudiantes de programación de RollingCode School y en este proyecto demostramos nuestras habilidades
+        aplicadas en desarrollo web. Diseñamos y estructuramos cada sección utilizando HTML, creamos la identidad visual
+        y los estilos premium con CSS y bootstrap. Garantizamos una interfaz moderna, limpia y 100% responsive. Este
+        trabajo refleja nuestra capacidad para construir plataformas
+        dinámicas, estéticas y funcionales."</p>
 
       <hr class="parrafo">
     </div>
-    <div class="container p-3">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-6">
-          <img src="../assets/img/yo.jpeg" alt="lucio" class="img-nosotros">
-          <h2 class="fw-normal nosotros">Lucio llanos</h2>
-          <p class="parrafo">
-          <p class="parrafo"> Instagram: luciollanoss</p>
-          <p class="parrafo"> Facebook:</p>
-          <p class="parrafo"> Linkedin:</p>
-          </p>
-        </div>
-        <div class="col-lg-6">
-          <img src="../assets/img/rosario.jpeg" alt="rosario" class="img-nosotros">
-          <h2 class="fw-normal nosotros">Rosario ojeda</h2>
-          <p class="parrafo">
-          <p class="parrafo"> Instagram:</p>
-          <p class="parrafo"> Facebook:</p>
-          <p class="parrafo"> Linkedin:</p>
-          </p>
-        </div>
+        <!-- Convertimos el article en un flexbox que se apila en celular y se pone en fila en escritorio -->
+        <article class="d-flex flex-column flex-md-row justify-content-between gap-4 w-100">
+
+          <!-- Ahora col-md-6 responderá correctamente gracias al cambio en el padre -->
+          <div class="col-12 col-md-6">
+            <div class="container d-flex">
+              <div>
+                <img src="../assets/img/yo.jpeg" alt="lucio" class="img-nosotros">
+              </div>
+              <div>
+                <h2 class="fw-normal nosotros">Lucio llanos</h2>
+                <div class="ps-3">
+                  <p class="parrafo mb-1"> Linkedin: Lucio LLanos</p>
+                  <p class="parrafo mb-1"> whatsapp: 3812042843</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="container d-flex">
+              <div>
+                <img src="../assets/img/rosario.jpeg" alt="rosario" class="img-nosotros">
+              </div>
+              <div>
+                <h2 class="fw-normal nosotros">Rosario ojeda</h2>
+                <div class="ps-3">
+                  <p class="parrafo mb-1"> Facebook: Rosario Ojeda</p>
+                  <p class="parrafo mb-1"> Linkedln: Rosario Ojeda</p>
+                  <p class="parrafo mb-1"> whatsapp: 3816991166</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </article>
       </div>
     </div>
+
   </main>
   <footer>
     <div class="col mb-3">
